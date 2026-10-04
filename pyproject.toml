@@ -1,0 +1,81 @@
+# ─────────────────────────────────────────────────────────────────────
+# Package HELM (helm-xai) — code dans implementation_v2/helm
+# Chantier : _specs/2026-07_package_interface_helm.md
+# ─────────────────────────────────────────────────────────────────────
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "helm-xai"
+version = "0.2.0rc3"
+description = "HELM : explications adaptées au profil pour la modération de contenus, avec interface locale et extension tabulaire expérimentale"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.10,<3.13"
+authors = [{ name = "Kossi Folly", email = "follyametepkossi@gmail.com" }]
+keywords = ["xai", "explainability", "content-moderation", "toxicity", "lime", "shap", "bandit"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Natural Language :: French",
+]
+# Noyau : ce qui a servi aux chiffres publiés (XKDD 2026, graine 42, k=3, num_features=8).
+dependencies = [
+    "numpy>=1.24,<2",
+    "scipy>=1.11",
+    "scikit-learn>=1.3",
+    "pandas>=2.0",
+    "lime>=0.2.0.1",
+    "shap>=0.43,<0.50",
+]
+
+[project.urls]
+Repository = "https://github.com/KossiFO/helm-xai"
+Issues = "https://github.com/KossiFO/helm-xai/issues"
+Releases = "https://github.com/KossiFO/helm-xai/releases"
+
+[project.scripts]
+helm-ui = "helm.ui.cli:main"
+
+[project.optional-dependencies]
+text = ["torch>=2.1", "transformers>=4.35,<5", "tokenizers>=0.15", "protobuf<5"]
+ui = ["fastapi>=0.115,<1", "uvicorn>=0.30,<1", "platformdirs>=4,<5"]
+# IG natif numérique vérifié ; distinct des anciens résultats LOO renommés IG.
+ig = ["captum>=0.7"]
+# Anchors officiel : NON utilisé pour les chiffres publiés (beam search interne).
+anchors = ["anchor-exp>=0.0.2", "spacy>=3.7,<4"]
+notebook = ["ipywidgets>=8,<9"]
+viz = ["matplotlib>=3.8", "seaborn>=0.13"]
+models = ["helm-xai[text]", "accelerate>=0.24", "sentencepiece>=0.1.99", "datasets>=2.14"]
+dev = ["tomli>=2; python_version < '3.11'", "pytest>=7.4", "ruff>=0.4", "build>=1.0", "httpx>=0.27,<1", "twine>=5"]
+all = ["helm-xai[text,ig,anchors,viz,models,ui,notebook]"]
+
+[tool.setuptools]
+package-dir = { "" = "implementation_v2" }
+
+[tool.setuptools.package-data]
+"helm.ui" = ["static/index.html", "static/THIRD_PARTY_NOTICES.txt", "static/assets/*.js", "static/assets/*.css"]
+
+[tool.setuptools.packages.find]
+where = ["implementation_v2"]
+include = ["helm*"]      # config.py, data/ et scripts/ (façades, démos) restent hors wheel
+
+[tool.pytest.ini_options]
+testpaths = ["implementation_v2/tests", "interface/tests"]
+addopts = "-q"
+filterwarnings = ["ignore::DeprecationWarning", "ignore::FutureWarning"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+extend-exclude = ["implementation", "qcm-soutenance", "Redaction_These", "XKDD_2026", "CSI_Support_2026-08-26", "_ARTICLE_VF"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W"]
+ignore = ["E501"]   # lignes longues : héritage, pas de reformatage massif (diff minimal)

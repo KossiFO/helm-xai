@@ -1,0 +1,64 @@
+name: Publier les distributions vérifiées sur PyPI
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Tag de la release GitHub déjà vérifiée (ex. v0.2.0rc2)
+        required: true
+        type: string
+permissions:
+  contents: read
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment: pypi
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Récupérer les fichiers de la release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ inputs.tag }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          [[ "$RELEASE_TAG" =~ ^v[0-9]+\.[0-9]+\.[0-9]+(rc[0-9]+)?$ ]]
+          gh release download "$RELEASE_TAG" --dir release --pattern '*.whl' --pattern '*.tar.gz' --pattern 'SHA256SUMS-*.txt'
+          cd release
+          sha256sum --check SHA256SUMS-*.txt
+      - name: Vérifier la version et la licence
+        env:
+          RELEASE_TAG: ${{ inputs.tag }}
+        run: |
+          python -m pip install twine
+          python -m twine check release/*.whl release/*.tar.gz
+          python - <<'PY'
+          import email, os, pathlib, tarfile, zipfile
+          wheels = list(pathlib.Path('release').glob('*.whl'))
+          sources = list(pathlib.Path('release').glob('*.tar.gz'))
+          assert len(wheels) == 1
+          assert len(sources) == 1
+          def check_metadata(raw):
+              metadata = email.message_from_bytes(raw)
+              assert metadata['Name'] == 'helm-xai'
+              assert metadata['Version'] == os.environ['RELEASE_TAG'][1:]
+              assert 'Private :: Do Not Upload' not in metadata.get_all('Classifier', [])
+              assert 'License :: OSI Approved :: MIT License' in metadata.get_all('Classifier', [])
+          with zipfile.ZipFile(wheels[0]) as archive:
+              metadata_path = next(n for n in archive.namelist() if n.endswith('.dist-info/METADATA'))
+              check_metadata(archive.read(metadata_path))
+              wheel_license = archive.read(next(n for n in archive.namelist() if n.endswith('/LICENSE')))
+          with tarfile.open(sources[0]) as archive:
+              metadata_path = next(n for n in archive.getnames() if n.count('/') == 1 and n.endswith('/PKG-INFO'))
+              check_metadata(archive.extractfile(metadata_path).read())
+              source_license = archive.extractfile(next(n for n in archive.getnames() if n.count('/') == 1 and n.endswith('/LICENSE'))).read()
+              assert source_license == wheel_license
+              assert wheel_license.startswith(b'MIT License')
+          PY
+          mkdir dist
+          cp release/*.whl release/*.tar.gz dist/
+      - name: Publier sans clé permanente
+        uses: pypa/gh-action-pypi-publish@release/v1

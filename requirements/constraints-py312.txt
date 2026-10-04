@@ -1,0 +1,17 @@
+# Environnement de recette Python 3.12. Les dépendances transitives sont résolues par pip.
+numpy==1.26.4
+scipy==1.13.1
+scikit-learn==1.4.2
+pandas==2.2.2
+torch==2.7.1
+transformers==4.53.3
+tokenizers==0.21.4
+huggingface_hub==0.36.2
+lime==0.2.0.1
+shap==0.49.1
+protobuf==4.25.9
+fastapi==0.141.1
+uvicorn==0.52.4
+platformdirs==4.11.8
+captum==0.9.0
+anchor-exp==0.0.2.0

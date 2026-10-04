@@ -1,0 +1,630 @@
+[
+  {
+    "path": ".github/workflows/ci.yml",
+    "sha256": "1bd834f2eaf3f4f6c3780e7c0d30ae215619997b23dd9e0940bb776bbf93272e"
+  },
+  {
+    "path": ".github/workflows/publish-pypi.yml",
+    "sha256": "3cb900a118c64a014848a58656858d57e05e5eca5a9724e3e3824c7a4d3af2e5"
+  },
+  {
+    "path": "CITATION.cff",
+    "sha256": "65163fe5608c28473fc3ac36a7e1495669d016cfad7c2d7fde4e5f005df0a2c9"
+  },
+  {
+    "path": "DROITS.md",
+    "sha256": "8002c0f992953aea012044059c9c1ac9ac6c0e19a4d5694b9e026c6ee4da78c3"
+  },
+  {
+    "path": "LICENSE",
+    "sha256": "75fbab87cfdde6135cade1da0e89faba901ff20622c651e4060ecd703671a3d9"
+  },
+  {
+    "path": "MANIFEST.in",
+    "sha256": "3b38e6c23afb73464f9adbe46b9f91b3cce87c88d7e5e22b45b45929ea6be76d"
+  },
+  {
+    "path": "README.md",
+    "sha256": "a906de354021e53892b3807ff769a5a5e687f2a23cdba51dd985ad2dc1af175f"
+  },
+  {
+    "path": "THIRD_PARTY_NOTICES.txt",
+    "sha256": "8939eb84c7b6b077951c793a4aef4181c1557f07b2ed04491e6cd5f7ef3412fb"
+  },
+  {
+    "path": "docs/DEMARRAGE_PFE_v1_2026-09-29.md",
+    "sha256": "1e8733c8cdde39b7aa357594626e892c56228b2de1a06ef8e51c73fa84949c52"
+  },
+  {
+    "path": "docs/DEVELOPPEMENT.md",
+    "sha256": "e7008591ecddfbfc3c60205a6d7c9cc06b9bad37b486e946204d334153b58b9b"
+  },
+  {
+    "path": "docs/Databricks_HELM_v1_2026-09-14.md",
+    "sha256": "cb6d10508bc8c4ea134be7227b24203581bc55a4e972eaedf84383434c7c202c"
+  },
+  {
+    "path": "docs/Distribution_Python_v1_2026-09-14.md",
+    "sha256": "7036714a677ca91752664bc9624e2dae1991f17f80aa98914de1093d2fd1a0fe"
+  },
+  {
+    "path": "docs/Extension_HELM_ML_v1_2026-09-14.md",
+    "sha256": "2af52a7c403a649ab653dec442a8cbbdda5d6b8979f277e8b1802deda4ba5d1c"
+  },
+  {
+    "path": "docs/PUBLICATION_PYPI_v1_2026-10-03.md",
+    "sha256": "5ec696e856d3a596ef41a95630c31a3a8d65c0a71cd50c0be981eeeb64d04d38"
+  },
+  {
+    "path": "docs/Profils_HELM_v1_2026-09-14.md",
+    "sha256": "e4adc82ea72fe308039574867c523e0de7ee1e0105ef40dc11cc35e37e048edc"
+  },
+  {
+    "path": "docs/RELEASE_0.1.0a5_v1_2026-09-10.md",
+    "sha256": "85c640b49a504c80a9ad773aaa51643c9f1a31eca4a2c6d9607f79c1f1df4574"
+  },
+  {
+    "path": "docs/RELEASE_0.2.0rc1_v1_2026-10-03.md",
+    "sha256": "0c5fbafd625840c6a53d65671646d3cc5ebce733a62a91bf6ce95c73f0ec8d40"
+  },
+  {
+    "path": "docs/RELEASE_0.2.0rc2_v1_2026-10-03.md",
+    "sha256": "34c23e8c60e46f4178ab233e5e42203383ffb9393424151994528fc145281b0a"
+  },
+  {
+    "path": "docs/RELEASE_0.2.0rc3_v1_2026-10-04.md",
+    "sha256": "257fcb7ff030e7f32de00b5ef9ba404e643177d2883a71ab5a704ce4e9d7dc55"
+  },
+  {
+    "path": "docs/VALIDATION_0.1.0a5_v1_2026-09-10.md",
+    "sha256": "7072d71c0b4c048c2d455ef4cc8c1ca37be95f8fdbeefac45251871bd885fee8"
+  },
+  {
+    "path": "docs/Validation_HELM_tabulaire_v1_2026-09-14.md",
+    "sha256": "0eea4e2328297bc3a7410b32f79c2c32b4062ea6d9dc55c17ae566c1f1b91353"
+  },
+  {
+    "path": "examples/colab/HELM_MAAF_GitHub_v1_2026-09-14.ipynb",
+    "sha256": "16443313dce265a0bcddfc9a4d8529a0acbd4407d34425e13a46d2c0f7766b00"
+  },
+  {
+    "path": "examples/colab/HELM_MAAF_profils_v2_2026-09-14.ipynb",
+    "sha256": "35035814d6eea1cce42d9fd57becaff5577e15d2ea8a132bea1cd942eb52a02e"
+  },
+  {
+    "path": "examples/colab/HELM_MAAF_profils_v3_2026-09-14.ipynb",
+    "sha256": "859bbc85ba7db1e0b99b460f987b3e1a228490f61c02ca1efd74c27260af331f"
+  },
+  {
+    "path": "examples/colab/HELM_MAAF_profils_v4_2026-09-14.ipynb",
+    "sha256": "0fabf5d6b0b9b6034eb9f40a7c600219b9184668894d371c8beff7ed932d3639"
+  },
+  {
+    "path": "examples/colab/HELM_toxicite_cinq_methodes_v3_2026-09-14.ipynb",
+    "sha256": "82d965cb0349dd05de312368cf1b83850a0b67b66a9a64b4294ed5faa653ece0"
+  },
+  {
+    "path": "examples/colab/HELM_toxicite_profils_v1_2026-09-14.ipynb",
+    "sha256": "015595f230430334395302f655e684bd158195c3f7c04b0fa754b1e3a2ee4311"
+  },
+  {
+    "path": "examples/colab/HELM_toxicite_profils_v2_2026-09-14.ipynb",
+    "sha256": "ded0a45958365c2d65782d10c3ef96731417c71f5f7dc74f4160a96080243f7e"
+  },
+  {
+    "path": "examples/colab/HELM_toxicite_saisie_libre_v4_2026-09-14.ipynb",
+    "sha256": "e29a332713b5a5da0467ce3951e5b279fd1536da7ebe85fa558202d1b3258c50"
+  },
+  {
+    "path": "examples/colab/README.md",
+    "sha256": "bc23cb752306d6fab2d3a2157acfaa7f5057cafa7828eabee455cd3e5e76f6b9"
+  },
+  {
+    "path": "examples/colab/helm_colab/__init__.py",
+    "sha256": "e7408c3ebe05e46a30f8fb3605c9f5b280e30e69fbb023f23d92708c31f1f4bc"
+  },
+  {
+    "path": "examples/colab/helm_colab/data.py",
+    "sha256": "63c1998de2c5fa5cc5e97d596bc1d53fd2d6c15ad642d3101aa91be46ec3c155"
+  },
+  {
+    "path": "examples/colab/helm_colab/mixed_preprocessing.py",
+    "sha256": "3d9c3687c0fb74d1fb840c651454caeea44af776a73c1124233ce05fb2c28cce"
+  },
+  {
+    "path": "examples/colab/helm_colab/prepare.py",
+    "sha256": "709349e2b585577780f78a6330c6dbce13dbf1391c6122c3d8606f5750f39233"
+  },
+  {
+    "path": "examples/colab/helm_colab/profile_view.py",
+    "sha256": "eaf4340e8b7d5cad9fc7321db371a77891f2ff690bddcada693b9d01998d29ca"
+  },
+  {
+    "path": "examples/colab/helm_colab/session.py",
+    "sha256": "c2fbfe65dc401c967babdc4d24437420bd6d470c4f4e5c20656544b70db73c6f"
+  },
+  {
+    "path": "examples/colab/helm_colab/toxicity.py",
+    "sha256": "727d3749dea01de2f7724818f374d05394ea05ae88d5c7b79c8ef8dce397e8c8"
+  },
+  {
+    "path": "examples/colab/helm_colab/toxicity_live.py",
+    "sha256": "07403a82fb1247321e5cf960f78e66faaa3eb341e229c03ed2fc1eba1a446c7b"
+  },
+  {
+    "path": "examples/colab/helm_colab/toxicity_methods.py",
+    "sha256": "7e22dadfc3b122b40a9295c3ef9352f4103c5e40573c1d1d11d258c2b3fe7f73"
+  },
+  {
+    "path": "examples/colab/helm_colab/toxicity_session.py",
+    "sha256": "316cec2e7e9f657f1dece52eb7bd8c3584d252d248cd292aff15c889d63d9883"
+  },
+  {
+    "path": "examples/colab/helm_colab/worker.py",
+    "sha256": "432692ff0bea799a3ad4ddd7ffd04d9e7bc2191e65af4725fca16290bd628a67"
+  },
+  {
+    "path": "examples/databricks/HELM_Databricks_v1_2026-09-14.py",
+    "sha256": "e31ce3b61c67b76d5cbdd906b9d1bb52f0547fb4543c290b31f3c2b0a083026b"
+  },
+  {
+    "path": "examples/pfe_fixed_stimuli.py",
+    "sha256": "8d6ec7dfac0b9da92a0ddbf6e42ac15bab309144f7c8b50e2e1fc0bba6c6c848"
+  },
+  {
+    "path": "examples/tabular_data.py",
+    "sha256": "91d9ccd108e5b6bfe017e13c569afa68dac176edde78ebea3ccfd866800cab65"
+  },
+  {
+    "path": "examples/tabular_usage.py",
+    "sha256": "9157120789bc079faf03a980715569204995f857d5bd2266d5ea4feddc55a471"
+  },
+  {
+    "path": "implementation_v2/README.md",
+    "sha256": "e6835e7b7c74c3dc9c3a032e49512ea0594a7d8b64b2cbb1fbe184e92039aba9"
+  },
+  {
+    "path": "implementation_v2/RELEASE_0.1.0a4_v1_2026-09-10.md",
+    "sha256": "b0852a1a6f28390aeda8f6d460a6c5e765064fff73b0a35a45b4c52673817682"
+  },
+  {
+    "path": "implementation_v2/config.py",
+    "sha256": "7f7195cae0b3d39541fa214fde5c7223a98506e5db6ba9b91fb91184e3bba8d6"
+  },
+  {
+    "path": "implementation_v2/data/__init__.py",
+    "sha256": "038931ed3d6f31614cee77cc4be8c6ad984330fbdb1c591f9d8784e5ad99de53"
+  },
+  {
+    "path": "implementation_v2/data/evaluation_corpus.py",
+    "sha256": "6c49c0ecfbf0d2cfe4ad9e282dd6d49debbacb7effcc7bc713ce1866b2806823"
+  },
+  {
+    "path": "implementation_v2/helm/__init__.py",
+    "sha256": "021bdbf0557375cd2ab6053f107d1418a05a6068a006bfe82fc3047efbffff03"
+  },
+  {
+    "path": "implementation_v2/helm/config.py",
+    "sha256": "988c76723d3a67c56c6220c5d4f2440f7eb8b63762820ffa8f81e77667b38f96"
+  },
+  {
+    "path": "implementation_v2/helm/context.py",
+    "sha256": "b242cb9d66abb6b9faa52f5c8fc55a919f24e18941fa4ff03edefc55115d13b5"
+  },
+  {
+    "path": "implementation_v2/helm/data/__init__.py",
+    "sha256": "989574b0a493bf34659776dab497dc0be7ca285b3f0078ba9651ea7c3046b1b2"
+  },
+  {
+    "path": "implementation_v2/helm/data/evaluation_corpus.py",
+    "sha256": "e1f3529a8fdab3cc03a03542cd9364bf8f38fab974530a99ba67139375775d1a"
+  },
+  {
+    "path": "implementation_v2/helm/evaluation/__init__.py",
+    "sha256": "8cc1810853c311ea383b0e17044e62102ccbbbb46ac1a29a2978d140188d1005"
+  },
+  {
+    "path": "implementation_v2/helm/evaluation/benchmark.py",
+    "sha256": "28772838c2bc0298b683e536a4e04e392294af1877edab9c72d15320235207d2"
+  },
+  {
+    "path": "implementation_v2/helm/evaluation/fidelity.py",
+    "sha256": "95ae90fb061fc714615a815ab6d53deb116e809923acd890f128966d0bfdc01b"
+  },
+  {
+    "path": "implementation_v2/helm/evaluation/protocol.py",
+    "sha256": "9cbf38fc90009febd4dd4fd2be25fefeb34832469c9c81152822104e605f6926"
+  },
+  {
+    "path": "implementation_v2/helm/evaluation/stability.py",
+    "sha256": "9b44c469254f8e4b6a03d1f29be0c924bea00c06e1b92f9a7e276ad619d8c8f5"
+  },
+  {
+    "path": "implementation_v2/helm/explainers/__init__.py",
+    "sha256": "0c7461b0ecc90177c5e498071f31e5f8f7d720ffe2324f0ab9a88cf98a0e3bae"
+  },
+  {
+    "path": "implementation_v2/helm/explainers/anchors_wrapper.py",
+    "sha256": "e05f71572e0e5a1fdf5d9dcf541a0d9e6d58db1b8e7e969ec8026afe7dd7469c"
+  },
+  {
+    "path": "implementation_v2/helm/explainers/base.py",
+    "sha256": "f3b82650a0c25a70e289b2535e66bb89f1815038712b2c5dbf71912566a3ae64"
+  },
+  {
+    "path": "implementation_v2/helm/explainers/cot_wrapper.py",
+    "sha256": "210d4462858d3264625653f8d137a75d82c22ab86a6138d0b7ec0c2b5c41aec5"
+  },
+  {
+    "path": "implementation_v2/helm/explainers/counterfactual_wrapper.py",
+    "sha256": "178f417e1b20ae99d8318ca718194ed22a0f0bad84fd523edd9a9dc0c5dccdf6"
+  },
+  {
+    "path": "implementation_v2/helm/explainers/ig_wrapper.py",
+    "sha256": "8f3b062391493bbc162788c95c35ccc6f8df3114ef4e88115ae783a5b15f7801"
+  },
+  {
+    "path": "implementation_v2/helm/explainers/lime_wrapper.py",
+    "sha256": "2b0661f55be19301cc281aa89a68e9d02d95f5c34b93944fc92a5de59e5382c7"
+  },
+  {
+    "path": "implementation_v2/helm/explainers/logit_lens_wrapper.py",
+    "sha256": "3ad93e9bbeb97460a503631c6a03aea50958e96311832ad2a1c3f88645637771"
+  },
+  {
+    "path": "implementation_v2/helm/explainers/loo_wrapper.py",
+    "sha256": "74dec01a8187a69182e8f6ea9e1ddeaa9282272099f6def8fee3063b1a271df3"
+  },
+  {
+    "path": "implementation_v2/helm/explainers/shap_wrapper.py",
+    "sha256": "c1a2204f3c104d7166e00a25cef9adf727a715f2be5b7d7573111723e520c23b"
+  },
+  {
+    "path": "implementation_v2/helm/explainers/verified_ig.py",
+    "sha256": "776ed0ceaa5c8fca878423d91d554435141ba7d1eb55bd23045c14e1d06276c1"
+  },
+  {
+    "path": "implementation_v2/helm/explainers/word_positions.py",
+    "sha256": "0b11249b06cb235da46939c7c99497ea08a96fb6995df78217ce7a7791a8ef9b"
+  },
+  {
+    "path": "implementation_v2/helm/feedback/__init__.py",
+    "sha256": "fea72bde754bad4ff4b91a1c40cbdd9f525cc519c35e51e65cc59f716d926a09"
+  },
+  {
+    "path": "implementation_v2/helm/feedback/ucb1_auto_reward.py",
+    "sha256": "c8e09c0364ed6ccc163c99380222937ca4b25f94e8b280c4f8b013063fe6ecb0"
+  },
+  {
+    "path": "implementation_v2/helm/feedback/ucb1_learner.py",
+    "sha256": "6622c441d7162470d861309cd33620bbdacbbc9e91b647b9df8cb77da51f1521"
+  },
+  {
+    "path": "implementation_v2/helm/layers/__init__.py",
+    "sha256": "ba41f45201b9239dd45665a499e7405feb8fc8ab7589f599608957a2458b03f4"
+  },
+  {
+    "path": "implementation_v2/helm/layers/layer1_context.py",
+    "sha256": "eebc54b46793028cfb287236a4e60a4d8e3e83d04c21c9e24c445b1dabf027a5"
+  },
+  {
+    "path": "implementation_v2/helm/layers/layer2_selection.py",
+    "sha256": "762757e6a120118115f8a8fdebf2990c6df8156e6b9d704cbb28ff581080bbad"
+  },
+  {
+    "path": "implementation_v2/helm/layers/layer3_presentation.py",
+    "sha256": "6ee9bf169f62906f373577eaaeabb4881353b951115961e08f937bbce6040b6d"
+  },
+  {
+    "path": "implementation_v2/helm/models/__init__.py",
+    "sha256": "65ae19539f4923998a4fd20da872c5da871d94ae3ba2c18b949585cd588c3206"
+  },
+  {
+    "path": "implementation_v2/helm/models/model_manager.py",
+    "sha256": "a76ffeedbec4d38fa47a92c5b0608ea929db6f093a9fd446c3d329f294ed2b47"
+  },
+  {
+    "path": "implementation_v2/helm/pipeline.py",
+    "sha256": "7bfe7487c0d70f0923820ccba3c0d074b748e6a87f0034810f643e3519d87e40"
+  },
+  {
+    "path": "implementation_v2/helm/selection/__init__.py",
+    "sha256": "a3dd7a821f797554df8709ad6bfd424b23db1cc9a692a673e56313cc8e9ec4ee"
+  },
+  {
+    "path": "implementation_v2/helm/selection/contextual.py",
+    "sha256": "3ca491a09acb4f98411cb19c82ec58158e53384316b3552078fb866969101bc3"
+  },
+  {
+    "path": "implementation_v2/helm/study/__init__.py",
+    "sha256": "6b10e5bcb414fa2ea2c37357511b790c46a463f1063cdd9854e5727e9ea79a0f"
+  },
+  {
+    "path": "implementation_v2/helm/study/metrics.py",
+    "sha256": "1d0deab7f8cfe2dbeb69589a1bc450bdb4109b2395ae90cbe9faf794ff6c539a"
+  },
+  {
+    "path": "implementation_v2/helm/study/stimuli.py",
+    "sha256": "e41b634d54f4f4dcdbefbf7ebfb0881e988c8ced90dea60dd28f07ea074240ad"
+  },
+  {
+    "path": "implementation_v2/helm/tabular/__init__.py",
+    "sha256": "7d7d43b329f5b6844ad73b6496a4d1ccb20b140470865e6120ebafe30fc9e0d2"
+  },
+  {
+    "path": "implementation_v2/helm/tabular/adapter.py",
+    "sha256": "6010f7f7bb696ec30c541e948d335a4b1434b4b3fae1cd2356a5aa9afead942b"
+  },
+  {
+    "path": "implementation_v2/helm/tabular/engine.py",
+    "sha256": "fb56b34efd6c66f00f2f17916435987b067c692d8e735d25824fd1a73cb173e1"
+  },
+  {
+    "path": "implementation_v2/helm/tabular/explainers.py",
+    "sha256": "750e2d643fc3ce252ad41d84350e38db88675cb641454b6ec4f8d1997855cafa"
+  },
+  {
+    "path": "implementation_v2/helm/tabular/profiles.py",
+    "sha256": "d38f7b97a63efda83416c7a7627c082adf23440ea5fa073075e864501222cbc0"
+  },
+  {
+    "path": "implementation_v2/helm/tabular/report.py",
+    "sha256": "c69337e49dbec06dfceffe56c2c99a0bf6f64fa473170640e3e32330cf0bf7b3"
+  },
+  {
+    "path": "implementation_v2/helm/ui/__init__.py",
+    "sha256": "558920e78be778e22e07e140fe888e6448cfaaec983f6011c3c7337168066530"
+  },
+  {
+    "path": "implementation_v2/helm/ui/__main__.py",
+    "sha256": "307299fda7b77d22c64cb51430ec75e5f59d78e9c948786afb3b2544fe45e4b7"
+  },
+  {
+    "path": "implementation_v2/helm/ui/app.py",
+    "sha256": "e13ae1a5481e1bf0a96b157dce624c497d045352684140e9d1b058d73ba377c0"
+  },
+  {
+    "path": "implementation_v2/helm/ui/cli.py",
+    "sha256": "ad5317380c3e55caecc99ab72e9b43fa1481a337c619387329f02eb8e9e2f9d3"
+  },
+  {
+    "path": "implementation_v2/helm/ui/models.py",
+    "sha256": "e9e519e44c70b897c4941b3d39fa25e115c4336262a075488df86ed246b9fd81"
+  },
+  {
+    "path": "implementation_v2/helm/ui/schemas.py",
+    "sha256": "d636528f17ac6c3882a4056de794870fe58a16f105febbd05e1926fe038341a1"
+  },
+  {
+    "path": "implementation_v2/helm/ui/service.py",
+    "sha256": "b844853b5ff9a0c06374c702709cbe29c16beaad57838e7bb39fb4f631b17f62"
+  },
+  {
+    "path": "implementation_v2/helm/ui/static/THIRD_PARTY_NOTICES.txt",
+    "sha256": "8939eb84c7b6b077951c793a4aef4181c1557f07b2ed04491e6cd5f7ef3412fb"
+  },
+  {
+    "path": "implementation_v2/helm/ui/static/assets/index-fpiPKAhX.js",
+    "sha256": "16c2fba1d06ee499f4044107cce3fd344e3c83a18170e8bc2a35bb4a24564ffd"
+  },
+  {
+    "path": "implementation_v2/helm/ui/static/assets/index-vOV6z_2R.css",
+    "sha256": "58cf6fb01bd681785738719e65b1c57ddd7d157a3f8a91bf0ac34712f5747926"
+  },
+  {
+    "path": "implementation_v2/helm/ui/static/index.html",
+    "sha256": "37d60e68b603ced9270067ea82e1fdf20dcc591be6d1fb3d40c87978072de126"
+  },
+  {
+    "path": "implementation_v2/helm/ui/store.py",
+    "sha256": "d5cf88673385f0d56087495581c70258c496468087e4d48737b850a08d09b32d"
+  },
+  {
+    "path": "implementation_v2/helm/visualization/__init__.py",
+    "sha256": "59a2e0978a788adb4db6c353018756e97d63ee571d8752ac2794312395565279"
+  },
+  {
+    "path": "implementation_v2/helm/visualization/dashboard.py",
+    "sha256": "f27863223ac702b91dfd17d4eca4df5e211c576bb7df95d0c76d6f4ceb8b904b"
+  },
+  {
+    "path": "implementation_v2/helm/visualization/method_coverage.py",
+    "sha256": "0694d3257cf8af04f7dca09e681d32d7b994f11fa3af82a4190deeb7c8b2e81f"
+  },
+  {
+    "path": "implementation_v2/helm/visualization/plots.py",
+    "sha256": "b2685ae312f2b79cbcfd10da7267e6e3131eff0142c9711dce0fed0b3f058cce"
+  },
+  {
+    "path": "implementation_v2/helm/visualization/profile_html.py",
+    "sha256": "d41835e41b9e1943b4d2cecdf035f78c1c75d4f4963d8136cda88c9896aa27f1"
+  },
+  {
+    "path": "implementation_v2/helm/visualization/text_input.py",
+    "sha256": "cd2b21ca3f562a10d162c4a535c6e6d8676e992be11b3a93e0eaf6570e61e52c"
+  },
+  {
+    "path": "implementation_v2/tests/conftest.py",
+    "sha256": "d86fa81e7e854cd386f73c87480bce37c59d9f8c247a059a63a6448172cfeffe"
+  },
+  {
+    "path": "implementation_v2/tests/test_compat_historical_scripts.py",
+    "sha256": "ae910e41cf151de4183d9dacb46a031d7bebea6b55e044aa2ee7301d81ee3f11"
+  },
+  {
+    "path": "implementation_v2/tests/test_config.py",
+    "sha256": "7494910cd557649de421f194ec3d4c7f67250eb62d96e0fc0ca544cbd187bf55"
+  },
+  {
+    "path": "implementation_v2/tests/test_contextual_selector.py",
+    "sha256": "f97191521bfb46029253ca55032983af42aa1def023bbf28277e4c95705882c1"
+  },
+  {
+    "path": "implementation_v2/tests/test_dashboard.py",
+    "sha256": "9aef25fb1ca35c3c1c77477b8a415ff3aebcfa73c78eb7bf335091e25428218a"
+  },
+  {
+    "path": "implementation_v2/tests/test_evaluation.py",
+    "sha256": "50474e908ca24d2b4ac7bc0ea9d6479d09d5a06470dea99f9d931579e94c04c3"
+  },
+  {
+    "path": "implementation_v2/tests/test_imports.py",
+    "sha256": "e098f687bc7b7108c7cecce085f966ee2b68061e93970d8705cc107906f792a5"
+  },
+  {
+    "path": "implementation_v2/tests/test_layers.py",
+    "sha256": "69de638606119a4b5694e13e9158ac78051a716ee5d51d27fccb4eb40e11630e"
+  },
+  {
+    "path": "implementation_v2/tests/test_native_explainers.py",
+    "sha256": "60957868761e19156ad798ff3c4cd0c2543db39c51863bfb6a6398809dc9c15c"
+  },
+  {
+    "path": "implementation_v2/tests/test_presentation_probabilities.py",
+    "sha256": "b773eb347d23d29cd1863fd872596cfa6c5865c9efdeaa7d4118a83509021fe4"
+  },
+  {
+    "path": "implementation_v2/tests/test_profiles_tabular.py",
+    "sha256": "e0042f3b046fc6d69664622257c9017c9b636e12fe25bc54050e0c6f7458e444"
+  },
+  {
+    "path": "implementation_v2/tests/test_recent_protocol.py",
+    "sha256": "dc8103f6eb7a9787fa3c0ae11729782f6f78775ed427289486c4a0ab3e9ba1ec"
+  },
+  {
+    "path": "implementation_v2/tests/test_release_correctness.py",
+    "sha256": "f150de37dde8619a21bfff330c27a09e1be40d25023e1ad5294b6e18c8837e7a"
+  },
+  {
+    "path": "implementation_v2/tests/test_study.py",
+    "sha256": "2caecbb222c5628d70d9f069cb0a58e340d3de4f161224e8c61d33c152045b7d"
+  },
+  {
+    "path": "implementation_v2/tests/test_tabular.py",
+    "sha256": "2b82bcf55bc345dcbe46ed0abd8d19c1e5c3a6442128a49c06029da0a7f309b6"
+  },
+  {
+    "path": "implementation_v2/tests/test_text_input.py",
+    "sha256": "b7e3f73270cd095e08d07eb582b6c5fd176ff371b81163739f86b48f3346ca21"
+  },
+  {
+    "path": "implementation_v2/tests/test_toxicity_coverage.py",
+    "sha256": "777509ce8907a6e95100deba07eef880035ac1fecc2983f57df9dc890f8b2ec1"
+  },
+  {
+    "path": "implementation_v2/tests/test_ucb1.py",
+    "sha256": "8add00b554d17a06f88f6849ab9adc0981490e2695e5c0808fb3975ff13be40d"
+  },
+  {
+    "path": "implementation_v2/tests/test_verified_ig.py",
+    "sha256": "b29530344461b8ee1778dbf09c37c2d4bf41af55a5cdcb3bdcd42877a641cbec"
+  },
+  {
+    "path": "interface/frontend/index.html",
+    "sha256": "492244810a307ea7ea7ca8ffc892cc94d298aa11072cb647018ef4eaaedd513a"
+  },
+  {
+    "path": "interface/frontend/package-lock.json",
+    "sha256": "e34dbda4dbbf6aa5fd3d11f45dfb717ec15375909fe1d477af1b73e178cf0d6b"
+  },
+  {
+    "path": "interface/frontend/package.json",
+    "sha256": "7636ef1178aa0f0c85d27e03bf8f1534beffc9c6a51a4549347d7e674818eec4"
+  },
+  {
+    "path": "interface/frontend/src/App.jsx",
+    "sha256": "e98dccb2ca156e98edae636544b4e068c75f3e50628d9e8c010a6678654880d9"
+  },
+  {
+    "path": "interface/frontend/src/api.js",
+    "sha256": "a8960fb79dea48a1262c6e8fb76420a6bb56b9ea2b88f130d925ed5293f031c1"
+  },
+  {
+    "path": "interface/frontend/src/components/Attributions.jsx",
+    "sha256": "422ef718a84619baeeea6c39688d7ad7ff1033a27185e124743448766576d209"
+  },
+  {
+    "path": "interface/frontend/src/components/Controls.jsx",
+    "sha256": "1076b1ef419812e5c946581d8aa5639d541d485556b5c2f83d1fd080c8870fbc"
+  },
+  {
+    "path": "interface/frontend/src/components/FeedbackPanel.jsx",
+    "sha256": "31d20c738370809d528e0568bd4997994677ec0a072b300de61b3023ccb6208b"
+  },
+  {
+    "path": "interface/frontend/src/components/History.jsx",
+    "sha256": "6bed4f52aa971ecde451613bd1e50acddbe59e60b05bfbec5708cfee41ae796e"
+  },
+  {
+    "path": "interface/frontend/src/components/ProfileSelect.jsx",
+    "sha256": "cd9b5f0afa22ea6833951e535e33c2bd797f10c8a052a4541513074db95e439b"
+  },
+  {
+    "path": "interface/frontend/src/components/ResultDetails.jsx",
+    "sha256": "e79dc5432f2030cc574b10f03c834f218956c25026ffdc7209e91f9f0f331bf9"
+  },
+  {
+    "path": "interface/frontend/src/components/ResultView.jsx",
+    "sha256": "cc0e818f1501571a6dbc1acc6d3d664643577f5895c7fb5373667825c8214016"
+  },
+  {
+    "path": "interface/frontend/src/lib.mjs",
+    "sha256": "4b4cd62973331fa66f38ed9d504e889515d93213ffe2bdd03cb350a9326c5386"
+  },
+  {
+    "path": "interface/frontend/src/main.jsx",
+    "sha256": "2b1ddfc72c68c81ca01cf40a8802689d3bbdf458ca76037971cf8197df628831"
+  },
+  {
+    "path": "interface/frontend/src/styles.css",
+    "sha256": "91a25e1bb282a3b3d5099629e9ca3c3967b2059869b825ba3ea6730d67bcb1b3"
+  },
+  {
+    "path": "interface/frontend/tests/api.test.mjs",
+    "sha256": "afe22f642ff6b12006eab33f1d9a2c9c32dea6eb6136529b53ead45970764775"
+  },
+  {
+    "path": "interface/frontend/tests/lib.test.mjs",
+    "sha256": "4cc86e54ee4c15a0a077e84e4f3940a03792402d1e060c1fa94a6881fd6c47d9"
+  },
+  {
+    "path": "interface/frontend/vite.config.js",
+    "sha256": "4146c72dadc5324d3e3f0bdaad20aa7beb7d9982b64f2778c1c7f267bf215d24"
+  },
+  {
+    "path": "interface/tests/test_api.py",
+    "sha256": "99e3ca863dbeb6eb11ac3ac8892a4debcb0b5ecf6e2a64bc10c84b53c5bc590f"
+  },
+  {
+    "path": "interface/tests/test_packaged_ui.py",
+    "sha256": "0233e9cc6b47d80f13b0a6ada0ce2fe105999db6b81e58a87bf751b368826aac"
+  },
+  {
+    "path": "pyproject.toml",
+    "sha256": "6de8c9136bba6f6e44fead6d6e8f03b5c7d5465665908983dd7971d9082ec298"
+  },
+  {
+    "path": "requirements/constraints-py312.txt",
+    "sha256": "22ea52f412823c9cf647acb3ea07152cd587122dbbcda07367a3f1769e2c4038"
+  },
+  {
+    "path": "setup.py",
+    "sha256": "f54be6b94db759e52acf0359750c46c71ec41ad0c158b2838aa490ce5fa508ea"
+  },
+  {
+    "path": "tools/build_release.py",
+    "sha256": "05f7c8dedc746c9e25719fa6a07d1cca744f194b416560d0fabcf55a1790581b"
+  },
+  {
+    "path": "tools/export_repository.py",
+    "sha256": "033743c46b9b340212d1b0d723684ebdd011992f80e9e9ca560b3d5f5fb283f8"
+  },
+  {
+    "path": "tools/release_sources.py",
+    "sha256": "fb785b696539c7c107d2386556a0eac93a54e9af19333acb196fa75dba60b7b0"
+  },
+  {
+    "path": "tools/smoke_installed.py",
+    "sha256": "dadbe722f53d56accfc8fad318b4b4464131a1a65de022aada3d750ff85d9573"
+  }
+]
