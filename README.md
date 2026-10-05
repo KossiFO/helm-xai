@@ -1,54 +1,29 @@
-> **Version candidate 0.2.0rc3 — diffusion publique sous licence MIT.** Installation et interface vérifiées ; validation humaine distincte ; [publiée sur PyPI](https://pypi.org/project/helm-xai/0.2.0rc3/).
->
-> [État, corrections et limites de cette version](https://github.com/KossiFO/helm-xai/blob/codex/publication/docs/RELEASE_0.2.0rc3_v1_2026-10-04.md).
-
->
-> Point de départ des PFE : [calculs figés sans apprentissage et guide de prise en main](https://github.com/KossiFO/helm-xai/blob/codex/publication/docs/DEMARRAGE_PFE_v1_2026-09-29.md). Le module `helm.study` est inclus dans cette candidate.
-> Les anciens notebooks conservent leur révision ; aucune expérience antérieure n’est remplacée.
-> `TabularHELM.explain_profile` propose des méthodes et une restitution par profil
-> (règles explicites, sans politique apprise). [Notice des profils](https://github.com/KossiFO/helm-xai/blob/codex/publication/docs/Profils_HELM_v1_2026-09-14.md).
-> [Notebooks Colab : MAAF et toxicité séparés](https://github.com/KossiFO/helm-xai/blob/codex/publication/examples/colab/README.md).
-
 # HELM — explications adaptées au profil
 
-HELM est le package de recherche de Kossi Folly pour explorer des explications
-adaptées à quatre profils : utilisateur, modérateur, expert technique et régulateur.
-La version **0.2.0rc3** réunit la bibliothèque Python et une interface locale épurée.
+HELM (`helm-xai`) est une bibliothèque Python d’explicabilité pour la classification
+de textes, en particulier la modération de contenus. Elle propose des explications
+adaptées aux profils utilisateur, modérateur, expert technique et régulateur.
+Une extension expérimentale prend en charge les classifieurs tabulaires.
 
-## Installer et ouvrir
+## Installation
 
-Prérequis : **Python 3.12**. Installer la distribution publiée sur PyPI :
+Python **3.10 à 3.12**. Pour installer la bibliothèque et son interface locale :
 
-```sh
-python -m pip install "helm-xai[ui]==0.2.0rc3"
+```bash
+python -m pip install "helm-xai[ui]==0.2.0rc4"
 helm-ui
 ```
 
-Le navigateur s’ouvre sur **http://127.0.0.1:8767/**. Choisir un profil, écrire un
-message et cliquer **Expliquer**. Le modèle de démonstration fonctionne sans poids
-à télécharger. Fermer le serveur avec Ctrl+C. Pour choisir un autre port :
-`helm-ui --port 8771`. Node.js n’est pas nécessaire pour utiliser la wheel.
+Le navigateur ouvre `http://127.0.0.1:8767/`. Choisir un profil, saisir un commentaire
+et cliquer sur **Expliquer**. La wheel inclut l’interface ; Node.js n’est pas requis.
+Pour un autre port : `helm-ui --port 8771`. Arrêter le serveur avec Ctrl+C.
 
-La démonstration utilise un classifieur entraîné sur **12 phrases fabriquées** :
-elles servent à essayer le parcours, pas à valider la détection de toxicité.
-Les modèles XLM-R, Qwen et CamemBERT deviennent disponibles lorsque leurs poids
-sont déjà dans le cache local. L’interface ne télécharge pas les poids.
+Le modèle de démonstration est entraîné sur **12 phrases synthétiques**. Il permet
+d’essayer le parcours, mais ne constitue pas un détecteur de toxicité validé.
+L’interface utilise les poids des modèles de texte déjà présents dans le cache
+local ; elle ne les télécharge pas.
 
-## Ce que contient cette livraison
-
-- Une bibliothèque `helm` : pipeline, explications, évaluation, sélection par profil
-  et UCB1 ; sélecteur contextuel LinUCB expérimental en option.
-- Une interface : quatre profils, mots importants, changement de méthode, détails
-  et traces repliés, historique et export JSON.
-- Des avis de 1 à 5 liés à l’explication individuelle affichée. Les avis restent
-  séparés par modèle, profil et version du package.
-
-Les analyses et les notes sont enregistrées sur l’ordinateur qui lance HELM, dans
-le dossier de données utilisateur `helm-xai`. `helm-ui --data-dir ./mes-analyses`
-permet de choisir ce dossier. Aucun historique personnel, résultat expérimental,
-poids de modèle ou donnée de participant n’est livré dans le package.
-
-## Utiliser la bibliothèque Python
+## Utilisation Python
 
 ```python
 from helm import HELMPipeline, UserProfile
@@ -61,24 +36,54 @@ resultat = pipeline.explain(
     evaluate=True, num_features=8, evaluation_k=3,
 )
 print(resultat.prediction)
-print(resultat.attributions.keys())
+print(resultat.formatted_output.summary)
 ```
 
-[Guide scientifique et API](https://github.com/KossiFO/helm-xai/blob/codex/publication/implementation_v2/README.md) ·
-[Installation et développement](https://github.com/KossiFO/helm-xai/blob/codex/publication/docs/DEVELOPPEMENT.md) ·
-[Note de version](https://github.com/KossiFO/helm-xai/blob/codex/publication/docs/RELEASE_0.2.0rc3_v1_2026-10-04.md).
+Le profil désigne le destinataire de l’explication ; il est choisi explicitement.
+HELM ne déduit pas le profil de la personne à partir de son commentaire.
 
-## Portée
+## Fonctionnalités
 
-Candidate de recherche, dérivée de l’édition Codex isolée. Les identités effectives des
-méthodes sont affichées : le remplacement LOO reste distinct d’IG natif vérifié,
-qui s’active explicitement dans l’API Python. Les métriques signées C/S ciblent
-la classe prédite ; elles ne mesurent pas la satisfaction humaine.
+- Sélection et présentation d’explications par profil, avec backends effectivement exécutés identifiés.
+- Attributions, règles locales et recherches de contrefactuels, selon les méthodes et dépendances disponibles.
+- Interface locale avec historique, export JSON et avis liés à chaque explication individuelle.
+- Extension `TabularHELM` pour les modèles scikit-learn avec `predict_proba`, variables numériques et catégorielles, classement des scores et sorties HTML par profil.
 
-Cette interface est un démonstrateur local. Le protocole d’étude distante à
-l’aveugle est un projet distinct ; l’hébergement du code sur GitHub ne crée pas
-un lien d’étude utilisable par les participants. Tests logiciels et recette ne
-constituent pas une validation humaine du framework.
+Les analyses restent dans le dossier de données utilisateur `helm-xai` de la
+machine qui lance le serveur. `helm-ui --data-dir ./mes-analyses` permet de le changer.
 
-Le code HELM est distribué sous [licence MIT](https://github.com/KossiFO/helm-xai/blob/codex/publication/LICENSE) ; voir [DROITS.md](https://github.com/KossiFO/helm-xai/blob/codex/publication/DROITS.md).
-La candidate est disponible sur [PyPI](https://pypi.org/project/helm-xai/0.2.0rc3/) et dans les [releases GitHub](https://github.com/KossiFO/helm-xai/releases/tag/v0.2.0rc3).
+## Dépendances optionnelles
+
+| Extra | Usage |
+|---|---|
+| `ui` | Interface locale |
+| `text` | Modèles de texte avec PyTorch et Transformers |
+| `ig` | Integrated Gradients via Captum |
+| `anchors` | Backend Anchors natif |
+| `notebook` | Widgets Jupyter |
+| `dev` | Outils de test et de construction |
+
+Pour un modèle de texte et ces explicateurs :
+`python -m pip install "helm-xai[text,ig,anchors,notebook]==0.2.0rc4"`.
+Les poids des modèles sont à obtenir séparément, selon leurs licences.
+
+## Documentation et exemples
+
+- [API et fonctionnement](https://github.com/KossiFO/helm-xai/blob/codex/publication/implementation_v2/README.md)
+- [Exemple tabulaire synthétique](https://github.com/KossiFO/helm-xai/blob/codex/publication/examples/tabular_usage.py)
+- [Développement et tests](https://github.com/KossiFO/helm-xai/blob/codex/publication/docs/DEVELOPPEMENT.md)
+- [Notes de version](https://github.com/KossiFO/helm-xai/blob/codex/publication/docs/RELEASE_0.2.0rc4_v1_2026-10-05.md)
+
+## Périmètre et licence
+
+**Version candidate de recherche.** Les tests logiciels vérifient les parcours et
+les calculs sur des cas contrôlés ; ils ne constituent pas une validation humaine.
+L’extension tabulaire est expérimentale et la compatibilité Databricks reste à
+vérifier sur le Runtime cible. L’interface locale n’est pas un service d’étude hébergé.
+
+Les explications décrivent le comportement du modèle, sans établir de causalité.
+Les scores de méthodes différentes ne sont pas moyennés. Les métriques de fidélité
+ne mesurent pas la satisfaction des utilisateurs.
+
+Code sous [licence MIT](https://github.com/KossiFO/helm-xai/blob/codex/publication/LICENSE).
+Les bibliothèques et modèles tiers conservent leurs licences respectives.
