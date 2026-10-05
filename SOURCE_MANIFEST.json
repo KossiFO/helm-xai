@@ -21,7 +21,7 @@
   },
   {
     "path": "MANIFEST.in",
-    "sha256": "d83b9f275e023a86755c97a5cf5836aa57d90a972a3c2a6760f37dd55a7c3032"
+    "sha256": "125302d218a161a335b4c33a09038ca0373683599e4836b975ab02923b7dc65c"
   },
   {
     "path": "README.md",
@@ -61,15 +61,15 @@
   },
   {
     "path": "docs/RELEASE_0.2.0rc1_v1_2026-10-03.md",
-    "sha256": "4f84b3c61d6d9a8fd44f8acd1d4edb6b79cf8a19c8abf37887436e195b772049"
+    "sha256": "76644e23398e6dba4261f6f8eed6018de2de26a34adebf6e36b4e048467c2905"
   },
   {
     "path": "docs/RELEASE_0.2.0rc2_v1_2026-10-03.md",
-    "sha256": "a0a4e022792decc53256baa318e78040266608f582255d781706c7c8b53bea16"
+    "sha256": "f32289490a4824d1df61555f6eb14debf05ed759b0e3f357a958614ae3098688"
   },
   {
     "path": "docs/RELEASE_0.2.0rc3_v1_2026-10-04.md",
-    "sha256": "feaa7692770503dac93e124321553df2f74e5519486ec6b39480e389a3607ba9"
+    "sha256": "db2f14fdfbd1d35fac250f5dc5de01e220af20fa513b4f753d70bcf90e6d0cad"
   },
   {
     "path": "docs/RELEASE_0.2.0rc4_v1_2026-10-05.md",

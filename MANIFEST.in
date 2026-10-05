@@ -26,3 +26,5 @@ recursive-include docs *.md
 recursive-include examples *.ipynb *.md
 recursive-include implementation_v2/helm/ui/static *.html *.js *.css *.txt
 recursive-include .github/workflows *.yml
+
+include implementation_v2/RELEASE_0.1.0a4_v1_2026-09-10.md
