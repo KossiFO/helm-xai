@@ -8,7 +8,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "helm-xai"
-version = "0.2.0rc4"
+version = "0.2.0rc5"
 description = "HELM : explications adaptées au profil pour la modération de contenus, avec interface locale et extension tabulaire expérimentale"
 readme = "README.md"
 license = {file = "LICENSE"}
@@ -50,11 +50,13 @@ ui = ["fastapi>=0.115,<1", "uvicorn>=0.30,<1", "platformdirs>=4,<5"]
 ig = ["captum>=0.7"]
 # Anchors officiel : NON utilisé pour les chiffres publiés (beam search interne).
 anchors = ["anchor-exp>=0.0.2", "spacy>=3.7,<4"]
+boosting = ["xgboost>=2,<4", "lightgbm>=4,<5"]
+statistics = ["statsmodels>=0.14,<0.16", "pygam>=0.10,<0.13"]
 notebook = ["ipywidgets>=8,<9"]
 viz = ["matplotlib>=3.8", "seaborn>=0.13"]
 models = ["helm-xai[text]", "accelerate>=0.24", "sentencepiece>=0.1.99", "datasets>=2.14"]
 dev = ["tomli>=2; python_version < '3.11'", "pytest>=7.4", "ruff>=0.4", "build>=1.0", "httpx>=0.27,<1", "twine>=5"]
-all = ["helm-xai[text,ig,anchors,viz,models,ui,notebook]"]
+all = ["helm-xai[text,ig,anchors,viz,models,ui,notebook,boosting,statistics]"]
 
 [tool.setuptools]
 package-dir = { "" = "implementation_v2" }

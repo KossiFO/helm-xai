@@ -1,7 +1,7 @@
 [
   {
     "path": ".github/workflows/ci.yml",
-    "sha256": "1bd834f2eaf3f4f6c3780e7c0d30ae215619997b23dd9e0940bb776bbf93272e"
+    "sha256": "5094c1c2e924a22034bb25fcd1c036b9f50d6498320a47314db6b12e5740d8ac"
   },
   {
     "path": ".github/workflows/publish-pypi.yml",
@@ -9,7 +9,7 @@
   },
   {
     "path": "CITATION.cff",
-    "sha256": "8833368bc2dda22ef28767c16f243d9c78732c51bee91e0a077aee64e26d9ed3"
+    "sha256": "6237f04662f0d8194665e3e3885f34d33dd8421b9c76be44d4f1f18917cd5875"
   },
   {
     "path": "DROITS.md",
@@ -25,11 +25,15 @@
   },
   {
     "path": "README.md",
-    "sha256": "dd149afd879a9509f3e0e2f0ec1aaca49ff1483b84235e6d3745439941f9ccf1"
+    "sha256": "ac5c9a3d46b0ab68dae2a94d53acce5aeaefa5ed467f948512e9572b24f6be9a"
   },
   {
     "path": "THIRD_PARTY_NOTICES.txt",
     "sha256": "8939eb84c7b6b077951c793a4aef4181c1557f07b2ed04491e6cd5f7ef3412fb"
+  },
+  {
+    "path": "docs/COMPATIBILITE_MODELES_v1_2026-10-05.md",
+    "sha256": "a912ac9ed474ce28217f2d944736bb01767f8613e07bec67f23a52da0463a26a"
   },
   {
     "path": "docs/DEVELOPPEMENT.md",
@@ -76,12 +80,20 @@
     "sha256": "706855f5e73d8ff420a3e997f7d703cca647332d2e967cc1edd41574018c70a5"
   },
   {
+    "path": "docs/RELEASE_0.2.0rc5_v1_2026-10-05.md",
+    "sha256": "058c4652c58478d3b295710884dc751f53bd0d65724553b83ae530270c4b1365"
+  },
+  {
     "path": "docs/VALIDATION_0.1.0a5_v1_2026-09-10.md",
     "sha256": "7072d71c0b4c048c2d455ef4cc8c1ca37be95f8fdbeefac45251871bd885fee8"
   },
   {
     "path": "docs/Validation_HELM_tabulaire_v1_2026-09-14.md",
     "sha256": "e692ea36dd8c5dd1dfd4b1d86004d9caf669ee03dd8d7790b8d5ca6de2975ee0"
+  },
+  {
+    "path": "examples/classifier_models.py",
+    "sha256": "8ad37c5df31e7c512f41b1287e73aef6fb98f42eb88fa2c7e05413b5e2e952a4"
   },
   {
     "path": "examples/colab/HELM_toxicite_cinq_methodes_v3_2026-09-14.ipynb",
@@ -140,6 +152,10 @@
     "sha256": "9f6b2c673cece935affceeed1c183485d889e635e47f1eaeb6ea26aabca9e0d3"
   },
   {
+    "path": "examples/verify_classifiers.py",
+    "sha256": "e3fa51539053460b3a1fe58974faa425d0c4a72e4d0a43f415ee4c8e6659dae3"
+  },
+  {
     "path": "implementation_v2/README.md",
     "sha256": "7593a4941ca30f169c086bce8a8b2a8ba4b97165377dfe9911c66d42db2356ba"
   },
@@ -161,7 +177,7 @@
   },
   {
     "path": "implementation_v2/helm/__init__.py",
-    "sha256": "3c01976431ad30102116c8f76777db5dd7f9911a41854e339ce4ecf478b7ffa9"
+    "sha256": "5527d032e182ae89a0db88912791b6a45c1dfc050e9cfb08697182fda8bc85a8"
   },
   {
     "path": "implementation_v2/helm/config.py",
@@ -309,7 +325,7 @@
   },
   {
     "path": "implementation_v2/helm/tabular/__init__.py",
-    "sha256": "7d7d43b329f5b6844ad73b6496a4d1ccb20b140470865e6120ebafe30fc9e0d2"
+    "sha256": "83cbf9ce5d8a3c8326137d4ab6ae1cc5eeb9926cb2a0d31c4925bb76d0f5857a"
   },
   {
     "path": "implementation_v2/helm/tabular/adapter.py",
@@ -330,6 +346,10 @@
   {
     "path": "implementation_v2/helm/tabular/report.py",
     "sha256": "c69337e49dbec06dfceffe56c2c99a0bf6f64fa473170640e3e32330cf0bf7b3"
+  },
+  {
+    "path": "implementation_v2/helm/tabular/statistical.py",
+    "sha256": "b7ec3d1c7dc1b582df641601c6d3ab809f6030d9f443dd5d7a67d5bc2437c485"
   },
   {
     "path": "implementation_v2/helm/ui/__init__.py",
@@ -456,6 +476,10 @@
     "sha256": "f150de37dde8619a21bfff330c27a09e1be40d25023e1ad5294b6e18c8837e7a"
   },
   {
+    "path": "implementation_v2/tests/test_statistical_adapters.py",
+    "sha256": "691b10dea1d93ce7d3f191bceb685810181a69163af2176edd71c482cd58af05"
+  },
+  {
     "path": "implementation_v2/tests/test_study.py",
     "sha256": "2caecbb222c5628d70d9f069cb0a58e340d3de4f161224e8c61d33c152045b7d"
   },
@@ -561,7 +585,7 @@
   },
   {
     "path": "pyproject.toml",
-    "sha256": "d62e619d41e4162cf90a565905dfebaf00ce7816bed5eefde333c9635b1c0230"
+    "sha256": "80bf4583841b088ecda0aefa2eac4d40c68a7622b44ad1eca759bd5dfb48f8b0"
   },
   {
     "path": "requirements/constraints-py312.txt",

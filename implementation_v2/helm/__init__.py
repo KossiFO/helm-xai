@@ -25,7 +25,7 @@ from .pipeline import HELMPipeline
 from .selection import ContextualSelector, ContextualChoice
 from .feedback import UCB1Learner, UCB1AutoReward
 
-__version__ = "0.2.0rc4"
+__version__ = "0.2.0rc5"
 
 # Une bibliothèque ne configure pas le logging de l'application hôte.
 logging.getLogger(__name__).addHandler(logging.NullHandler())
