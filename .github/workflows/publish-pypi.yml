@@ -1,9 +1,10 @@
 name: Publier les distributions vérifiées sur PyPI
+run-name: Publier HELM ${{ inputs.tag }} sur PyPI
 on:
   workflow_dispatch:
     inputs:
       tag:
-        description: Tag de la release GitHub déjà vérifiée (ex. v0.2.0rc2)
+        description: Tag de la release GitHub déjà vérifiée (ex. v0.2.0rc3)
         required: true
         type: string
 permissions:

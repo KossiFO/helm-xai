@@ -5,7 +5,7 @@
   },
   {
     "path": ".github/workflows/publish-pypi.yml",
-    "sha256": "3cb900a118c64a014848a58656858d57e05e5eca5a9724e3e3824c7a4d3af2e5"
+    "sha256": "23b3fda8814dd4c9546002de0fe12a5d201c37ffd5637bbed89a25e5a823848e"
   },
   {
     "path": "CITATION.cff",
