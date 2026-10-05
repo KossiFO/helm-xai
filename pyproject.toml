@@ -8,7 +8,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "helm-xai"
-version = "0.2.0rc3"
+version = "0.2.0rc4"
 description = "HELM : explications adaptées au profil pour la modération de contenus, avec interface locale et extension tabulaire expérimentale"
 readme = "README.md"
 license = {file = "LICENSE"}

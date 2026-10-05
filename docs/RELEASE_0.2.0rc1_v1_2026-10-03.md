@@ -21,7 +21,7 @@ python -m pip install "./helm_xai-0.2.0rc1-py3-none-any.whl[ui]"
 helm-ui
 ```
 
-`[text,ig,anchors,notebook]` ajoute les dépendances des calculs texte et des widgets. `[all]` regroupe les extras d’usage. Aucun poids ni donnée MAAF n’est inclus. Le notebook de saisie libre téléchargé depuis une ancienne version conserve sa révision d’origine : il n’est pas mis à jour silencieusement par cette release.
+`[text,ig,anchors,notebook]` ajoute les dépendances des calculs texte et des widgets. `[all]` regroupe les extras d’usage. Aucun poids ni donnée sur données réelles n’est inclus. Le notebook de saisie libre téléchargé depuis une ancienne version conserve sa révision d’origine : il n’est pas mis à jour silencieusement par cette release.
 
 Pour reconstruire depuis un clone, utiliser `python tools/build_release.py` après installation de Node.js/npm et de l’extra `[dev]`. Une wheel publiée ne nécessite pas Node. Le sdist contient l’interface compilée pour permettre sa reconstruction Python seule.
 

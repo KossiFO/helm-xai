@@ -1,4 +1,4 @@
-"""Synthetic software checks; no MAAF data or scientific validation claim."""
+"""Synthetic software checks; no real-world data or scientific validation claim."""
 
 import pickle
 
@@ -149,7 +149,7 @@ def test_validation(mixed, kwargs):
 
 
 def test_background_preserves_distinct_missing_categories():
-    X = pd.DataFrame({"cat": ["a", None, np.nan, "b"] * 10})
+    X = pd.DataFrame({"cat": pd.Series(["a", None, np.nan, "b"] * 10, dtype=object)})
     y = [0, 1, 0, 0] * 10
     model = make_pipeline(OneHotEncoder(handle_unknown="ignore"),
                           RandomForestClassifier(n_estimators=20, random_state=42)).fit(X, y)

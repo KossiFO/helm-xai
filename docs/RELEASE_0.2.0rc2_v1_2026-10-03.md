@@ -22,7 +22,7 @@ ils ne sont pas prédits à partir du commentaire.
 ## Diffusion et validation
 
 La licence MIT et les droits de publication ont été confirmés par le titulaire.
-Aucune donnée MAAF, sortie privée de notebook ni réponse de participant n’est
+Aucune donnée sur données réelles, sortie privée de notebook ni réponse de participant n’est
 incluse. Les anciennes archives restent identiques.
 
 La rc1 a passé 175 tests Python et 8 tests frontend, avec installation UI

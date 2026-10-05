@@ -1,6 +1,6 @@
 # Validation logicielle HELM tabulaire — 14 septembre 2026
 
-Version `0.2.0a1`, branche Codex isolée, non publiée. Cette recette utilise des données synthétiques et ne constitue ni une expérience MAAF ni une validation utilisateur.
+Version `0.2.0a1`, branche Codex isolée, non publiée. Cette recette utilise des données synthétiques et ne constitue ni une expérience sur données réelles ni une validation utilisateur.
 
 ## Résultats vérifiés
 
@@ -20,7 +20,7 @@ Le script `examples/tabular_usage.py` entraîne un Random Forest de démonstrati
 
 Les tests n’établissent pas une compatibilité universelle avec tous les estimateurs, ni la fidélité ou l’utilité métier des explications. L’additivité SHAP est un contrôle arithmétique ; LIME fournit un R² local et ses avertissements numériques. Les catégories peuvent générer des combinaisons peu plausibles lors des perturbations. Les deux profils règlent seulement la présentation ; aucune politique profil/méthode n’a été calibrée sur le tabulaire.
 
-Le prochain essai MAAF doit être réalisé dans Colab, avec données mixtes, score de classe 1, prédiction et étiquette observée séparés, groupes à forts/faibles scores et analyse des erreurs de décision.
+Le prochain essai sur données réelles doit être réalisé dans Colab, avec données mixtes, score de classe 1, prédiction et étiquette observée séparés, groupes à forts/faibles scores et analyse des erreurs de décision.
 
 ## Relecture
 

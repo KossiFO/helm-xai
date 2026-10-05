@@ -32,7 +32,7 @@ dbutils.library.restartPython()
 # COMMAND ----------
 # MAGIC %md
 # MAGIC ## Vérification fonctionnelle avec données artificielles
-# MAGIC Ce test ne charge aucun dossier MAAF et ne valide pas le modèle métier.
+# MAGIC Ce test ne charge aucun dossier réel et ne valide pas le modèle métier.
 
 # COMMAND ----------
 import numpy as np

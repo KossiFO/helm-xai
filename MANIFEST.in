@@ -1,8 +1,5 @@
 include LICENSE
 include README.md DROITS.md CITATION.cff pyproject.toml THIRD_PARTY_NOTICES.txt
-include docs/DEVELOPPEMENT.md
-include docs/RELEASE_0.1.0a5_v1_2026-09-10.md
-include docs/VALIDATION_0.1.0a5_v1_2026-09-10.md
 recursive-include tools *.py
 recursive-include requirements *.txt
 recursive-include interface/frontend *.json *.js *.jsx *.css *.html *.mjs
@@ -11,7 +8,6 @@ recursive-include implementation_v2/tests *.py
 include implementation_v2/config.py
 recursive-include implementation_v2/data *.py
 include implementation_v2/README.md
-include implementation_v2/RELEASE_0.1.0a4_v1_2026-09-10.md
 prune interface/frontend/node_modules
 prune interface/frontend/dist
 prune interface/.runtime
@@ -22,13 +18,8 @@ global-exclude *.pyc *.sqlite* .DS_Store
 
 exclude docs/prd-interface_codex_v1_2026-09-08.md
 
-include docs/Extension_HELM_ML_v1_2026-09-14.md
-include docs/Validation_HELM_tabulaire_v1_2026-09-14.md
 recursive-include examples *.py
 
-include docs/Databricks_HELM_v1_2026-09-14.md
-include docs/Distribution_Python_v1_2026-09-14.md
-include docs/DEMARRAGE_PFE_v1_2026-09-29.md
 
 include setup.py SOURCE_MANIFEST.json
 recursive-include docs *.md

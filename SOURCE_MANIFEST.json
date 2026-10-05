@@ -9,11 +9,11 @@
   },
   {
     "path": "CITATION.cff",
-    "sha256": "65163fe5608c28473fc3ac36a7e1495669d016cfad7c2d7fde4e5f005df0a2c9"
+    "sha256": "8833368bc2dda22ef28767c16f243d9c78732c51bee91e0a077aee64e26d9ed3"
   },
   {
     "path": "DROITS.md",
-    "sha256": "8002c0f992953aea012044059c9c1ac9ac6c0e19a4d5694b9e026c6ee4da78c3"
+    "sha256": "53136f08d465efe2bf671636cd0b0abef2a016c2be83b0b2cc966c3f3cd999f1"
   },
   {
     "path": "LICENSE",
@@ -21,23 +21,19 @@
   },
   {
     "path": "MANIFEST.in",
-    "sha256": "3b38e6c23afb73464f9adbe46b9f91b3cce87c88d7e5e22b45b45929ea6be76d"
+    "sha256": "d83b9f275e023a86755c97a5cf5836aa57d90a972a3c2a6760f37dd55a7c3032"
   },
   {
     "path": "README.md",
-    "sha256": "7cfaa4068b501d92b513230dfc822793c2549d9b41048e3975e0b20b02fa344a"
+    "sha256": "dd149afd879a9509f3e0e2f0ec1aaca49ff1483b84235e6d3745439941f9ccf1"
   },
   {
     "path": "THIRD_PARTY_NOTICES.txt",
     "sha256": "8939eb84c7b6b077951c793a4aef4181c1557f07b2ed04491e6cd5f7ef3412fb"
   },
   {
-    "path": "docs/DEMARRAGE_PFE_v1_2026-09-29.md",
-    "sha256": "1e8733c8cdde39b7aa357594626e892c56228b2de1a06ef8e51c73fa84949c52"
-  },
-  {
     "path": "docs/DEVELOPPEMENT.md",
-    "sha256": "e7008591ecddfbfc3c60205a6d7c9cc06b9bad37b486e946204d334153b58b9b"
+    "sha256": "aedccef8304854f7bea6eae8267399e445a1425a05378c2e116934552aee8315"
   },
   {
     "path": "docs/Databricks_HELM_v1_2026-09-14.md",
@@ -49,7 +45,7 @@
   },
   {
     "path": "docs/Extension_HELM_ML_v1_2026-09-14.md",
-    "sha256": "2af52a7c403a649ab653dec442a8cbbdda5d6b8979f277e8b1802deda4ba5d1c"
+    "sha256": "609d09dd015ced0fa8bd8b69565ba34f17a2b9336f0a200980d4f049c179d7d0"
   },
   {
     "path": "docs/PUBLICATION_PYPI_v1_2026-10-03.md",
@@ -57,7 +53,7 @@
   },
   {
     "path": "docs/Profils_HELM_v1_2026-09-14.md",
-    "sha256": "e4adc82ea72fe308039574867c523e0de7ee1e0105ef40dc11cc35e37e048edc"
+    "sha256": "279e878c938abe19a0ac5af4ec21c9e74c6e137717d7e95923e2734829352349"
   },
   {
     "path": "docs/RELEASE_0.1.0a5_v1_2026-09-10.md",
@@ -65,15 +61,19 @@
   },
   {
     "path": "docs/RELEASE_0.2.0rc1_v1_2026-10-03.md",
-    "sha256": "0c5fbafd625840c6a53d65671646d3cc5ebce733a62a91bf6ce95c73f0ec8d40"
+    "sha256": "4f84b3c61d6d9a8fd44f8acd1d4edb6b79cf8a19c8abf37887436e195b772049"
   },
   {
     "path": "docs/RELEASE_0.2.0rc2_v1_2026-10-03.md",
-    "sha256": "34c23e8c60e46f4178ab233e5e42203383ffb9393424151994528fc145281b0a"
+    "sha256": "a0a4e022792decc53256baa318e78040266608f582255d781706c7c8b53bea16"
   },
   {
     "path": "docs/RELEASE_0.2.0rc3_v1_2026-10-04.md",
-    "sha256": "257fcb7ff030e7f32de00b5ef9ba404e643177d2883a71ab5a704ce4e9d7dc55"
+    "sha256": "feaa7692770503dac93e124321553df2f74e5519486ec6b39480e389a3607ba9"
+  },
+  {
+    "path": "docs/RELEASE_0.2.0rc4_v1_2026-10-05.md",
+    "sha256": "706855f5e73d8ff420a3e997f7d703cca647332d2e967cc1edd41574018c70a5"
   },
   {
     "path": "docs/VALIDATION_0.1.0a5_v1_2026-09-10.md",
@@ -81,23 +81,7 @@
   },
   {
     "path": "docs/Validation_HELM_tabulaire_v1_2026-09-14.md",
-    "sha256": "0eea4e2328297bc3a7410b32f79c2c32b4062ea6d9dc55c17ae566c1f1b91353"
-  },
-  {
-    "path": "examples/colab/HELM_MAAF_GitHub_v1_2026-09-14.ipynb",
-    "sha256": "16443313dce265a0bcddfc9a4d8529a0acbd4407d34425e13a46d2c0f7766b00"
-  },
-  {
-    "path": "examples/colab/HELM_MAAF_profils_v2_2026-09-14.ipynb",
-    "sha256": "35035814d6eea1cce42d9fd57becaff5577e15d2ea8a132bea1cd942eb52a02e"
-  },
-  {
-    "path": "examples/colab/HELM_MAAF_profils_v3_2026-09-14.ipynb",
-    "sha256": "859bbc85ba7db1e0b99b460f987b3e1a228490f61c02ca1efd74c27260af331f"
-  },
-  {
-    "path": "examples/colab/HELM_MAAF_profils_v4_2026-09-14.ipynb",
-    "sha256": "0fabf5d6b0b9b6034eb9f40a7c600219b9184668894d371c8beff7ed932d3639"
+    "sha256": "e692ea36dd8c5dd1dfd4b1d86004d9caf669ee03dd8d7790b8d5ca6de2975ee0"
   },
   {
     "path": "examples/colab/HELM_toxicite_cinq_methodes_v3_2026-09-14.ipynb",
@@ -117,31 +101,11 @@
   },
   {
     "path": "examples/colab/README.md",
-    "sha256": "bc23cb752306d6fab2d3a2157acfaa7f5057cafa7828eabee455cd3e5e76f6b9"
+    "sha256": "8b1a94a5125f57281d531826760d6833aa9238244aaa3af53619ae6e2bfda46b"
   },
   {
     "path": "examples/colab/helm_colab/__init__.py",
-    "sha256": "e7408c3ebe05e46a30f8fb3605c9f5b280e30e69fbb023f23d92708c31f1f4bc"
-  },
-  {
-    "path": "examples/colab/helm_colab/data.py",
-    "sha256": "63c1998de2c5fa5cc5e97d596bc1d53fd2d6c15ad642d3101aa91be46ec3c155"
-  },
-  {
-    "path": "examples/colab/helm_colab/mixed_preprocessing.py",
-    "sha256": "3d9c3687c0fb74d1fb840c651454caeea44af776a73c1124233ce05fb2c28cce"
-  },
-  {
-    "path": "examples/colab/helm_colab/prepare.py",
-    "sha256": "709349e2b585577780f78a6330c6dbce13dbf1391c6122c3d8606f5750f39233"
-  },
-  {
-    "path": "examples/colab/helm_colab/profile_view.py",
-    "sha256": "eaf4340e8b7d5cad9fc7321db371a77891f2ff690bddcada693b9d01998d29ca"
-  },
-  {
-    "path": "examples/colab/helm_colab/session.py",
-    "sha256": "c2fbfe65dc401c967babdc4d24437420bd6d470c4f4e5c20656544b70db73c6f"
+    "sha256": "decb7f1e5eb185673b2127c1a5a9145a1f3840e91115fe2e205d2f2c820e2fee"
   },
   {
     "path": "examples/colab/helm_colab/toxicity.py",
@@ -160,15 +124,11 @@
     "sha256": "316cec2e7e9f657f1dece52eb7bd8c3584d252d248cd292aff15c889d63d9883"
   },
   {
-    "path": "examples/colab/helm_colab/worker.py",
-    "sha256": "432692ff0bea799a3ad4ddd7ffd04d9e7bc2191e65af4725fca16290bd628a67"
-  },
-  {
     "path": "examples/databricks/HELM_Databricks_v1_2026-09-14.py",
-    "sha256": "e31ce3b61c67b76d5cbdd906b9d1bb52f0547fb4543c290b31f3c2b0a083026b"
+    "sha256": "986b529f40df12d7a7c6cea61c3a47f5c8c5a22ef6f560451c39a13d1b4935cf"
   },
   {
-    "path": "examples/pfe_fixed_stimuli.py",
+    "path": "examples/study_fixed_stimuli.py",
     "sha256": "8d6ec7dfac0b9da92a0ddbf6e42ac15bab309144f7c8b50e2e1fc0bba6c6c848"
   },
   {
@@ -177,15 +137,15 @@
   },
   {
     "path": "examples/tabular_usage.py",
-    "sha256": "9157120789bc079faf03a980715569204995f857d5bd2266d5ea4feddc55a471"
+    "sha256": "9f6b2c673cece935affceeed1c183485d889e635e47f1eaeb6ea26aabca9e0d3"
   },
   {
     "path": "implementation_v2/README.md",
-    "sha256": "e6835e7b7c74c3dc9c3a032e49512ea0594a7d8b64b2cbb1fbe184e92039aba9"
+    "sha256": "7593a4941ca30f169c086bce8a8b2a8ba4b97165377dfe9911c66d42db2356ba"
   },
   {
     "path": "implementation_v2/RELEASE_0.1.0a4_v1_2026-09-10.md",
-    "sha256": "b0852a1a6f28390aeda8f6d460a6c5e765064fff73b0a35a45b4c52673817682"
+    "sha256": "9100d6d9a21bcfb99b4657cb4d1cd3274b24d5688c2099951b50b954346fc265"
   },
   {
     "path": "implementation_v2/config.py",
@@ -201,7 +161,7 @@
   },
   {
     "path": "implementation_v2/helm/__init__.py",
-    "sha256": "021bdbf0557375cd2ab6053f107d1418a05a6068a006bfe82fc3047efbffff03"
+    "sha256": "3c01976431ad30102116c8f76777db5dd7f9911a41854e339ce4ecf478b7ffa9"
   },
   {
     "path": "implementation_v2/helm/config.py",
@@ -501,7 +461,7 @@
   },
   {
     "path": "implementation_v2/tests/test_tabular.py",
-    "sha256": "2b82bcf55bc345dcbe46ed0abd8d19c1e5c3a6442128a49c06029da0a7f309b6"
+    "sha256": "0f80a11246884cdda8781303c61d0bb122b8a2a7615d1fd163b22867d0ad2ea0"
   },
   {
     "path": "implementation_v2/tests/test_text_input.py",
@@ -601,7 +561,7 @@
   },
   {
     "path": "pyproject.toml",
-    "sha256": "6de8c9136bba6f6e44fead6d6e8f03b5c7d5465665908983dd7971d9082ec298"
+    "sha256": "d62e619d41e4162cf90a565905dfebaf00ce7816bed5eefde333c9635b1c0230"
   },
   {
     "path": "requirements/constraints-py312.txt",

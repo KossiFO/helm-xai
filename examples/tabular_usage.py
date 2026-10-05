@@ -10,7 +10,7 @@ helm = TabularHELM(model, X_train, target_class=1)
 report = helm.explain_top(X_test, k=5, method="shap", profile="metier", labels=y_test)
 
 output = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("helm_tabulaire_demo.html")
-html = report.to_html().replace("<body>", "<body><p><b>Démonstration sur des données entièrement synthétiques — aucun résultat MAAF.</b></p>")
+html = report.to_html().replace("<body>", "<body><p><b>Démonstration sur des données entièrement synthétiques — aucune donnée réelle.</b></p>")
 output.write_text(html, encoding="utf-8")
 print("Démonstration synthétique —", len(X_train), "lignes d’apprentissage,", len(X_test), "lignes test")
 print(report.ranking.to_string())

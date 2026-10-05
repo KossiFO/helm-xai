@@ -9,7 +9,7 @@ présentation), backends XAI identifiés, sélection par profil et UCB1 ; LinUCB
 > Adaptive Post-Hoc Explanation Selection in Textual Toxicity Classification*,
 > workshop XKDD, ECML-PKDD 2026.
 
-## Livraison installable 0.2.0rc3
+## Livraison installable 0.2.0rc4
 
 La wheel embarque maintenant l’interface épurée. Installer la wheel avec l’extra
 `[ui]`, puis lancer `helm-ui` ; voir le [guide de livraison](../README.md).

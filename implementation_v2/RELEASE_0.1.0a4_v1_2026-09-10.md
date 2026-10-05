@@ -39,7 +39,7 @@ Le pilote natif Anchors/CF v2 porte sur 5 mêmes textes : quatre règles non vid
 deux contrefactuels non vides inversant la classe. Il ne constitue pas la validation
 complète des sept méthodes ni une mesure d'utilité humaine.
 
-Sources en lecture dans `These_redaction` :
+Sources en lecture dans le dépôt de recherche :
 `Redaction_These/resultats/campagne493_brut_2026-09-10/`,
 `codex/IG_natif_HELM_v1_2026-09-09_code/`,
 `codex/Colab_HELM_v1_2026-09-09_code/`,

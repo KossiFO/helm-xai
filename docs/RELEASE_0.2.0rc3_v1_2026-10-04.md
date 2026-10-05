@@ -1,7 +1,7 @@
 # HELM 0.2.0rc3 — distribution publique MIT
 
 Le dépôt `KossiFO/helm-xai` distribue une copie propre du package actuel, sans
-historique Git privé ni données MAAF. La licence MIT a été choisie par le titulaire.
+historique Git privé ni données sur données réelles. La licence MIT a été choisie par le titulaire.
 Le moteur et l’interface sont ceux de la candidate rc2 ; seuls version,
 métadonnées et documentation de distribution sont adaptés.
 
