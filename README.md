@@ -1,13 +1,13 @@
-> **Version candidate 0.2.0rc3 — diffusion publique sous licence MIT.** Installation et interface vérifiées ; validation humaine distincte ; publication PyPI en préparation.
+> **Version candidate 0.2.0rc3 — diffusion publique sous licence MIT.** Installation et interface vérifiées ; validation humaine distincte ; [publiée sur PyPI](https://pypi.org/project/helm-xai/0.2.0rc3/).
 >
-> [État, corrections et limites de cette version](docs/RELEASE_0.2.0rc3_v1_2026-10-04.md).
+> [État, corrections et limites de cette version](https://github.com/KossiFO/helm-xai/blob/codex/publication/docs/RELEASE_0.2.0rc3_v1_2026-10-04.md).
 
 >
-> Point de départ des PFE : [calculs figés sans apprentissage et guide de prise en main](docs/DEMARRAGE_PFE_v1_2026-09-29.md). Le module `helm.study` est inclus dans cette candidate.
+> Point de départ des PFE : [calculs figés sans apprentissage et guide de prise en main](https://github.com/KossiFO/helm-xai/blob/codex/publication/docs/DEMARRAGE_PFE_v1_2026-09-29.md). Le module `helm.study` est inclus dans cette candidate.
 > Les anciens notebooks conservent leur révision ; aucune expérience antérieure n’est remplacée.
 > `TabularHELM.explain_profile` propose des méthodes et une restitution par profil
-> (règles explicites, sans politique apprise). [Notice des profils](docs/Profils_HELM_v1_2026-09-14.md).
-> [Notebooks Colab : MAAF et toxicité séparés](examples/colab/README.md).
+> (règles explicites, sans politique apprise). [Notice des profils](https://github.com/KossiFO/helm-xai/blob/codex/publication/docs/Profils_HELM_v1_2026-09-14.md).
+> [Notebooks Colab : MAAF et toxicité séparés](https://github.com/KossiFO/helm-xai/blob/codex/publication/examples/colab/README.md).
 
 # HELM — explications adaptées au profil
 
@@ -17,10 +17,10 @@ La version **0.2.0rc3** réunit la bibliothèque Python et une interface locale 
 
 ## Installer et ouvrir
 
-Prérequis : **Python 3.12**. Installer directement la distribution publique :
+Prérequis : **Python 3.12**. Installer la distribution publiée sur PyPI :
 
 ```sh
-python -m pip install "helm-xai[ui] @ https://github.com/KossiFO/helm-xai/releases/download/v0.2.0rc3/helm_xai-0.2.0rc3-py3-none-any.whl"
+python -m pip install "helm-xai[ui]==0.2.0rc3"
 helm-ui
 ```
 
@@ -64,9 +64,9 @@ print(resultat.prediction)
 print(resultat.attributions.keys())
 ```
 
-[Guide scientifique et API](implementation_v2/README.md) ·
-[Installation et développement](docs/DEVELOPPEMENT.md) ·
-[Note de version](docs/RELEASE_0.2.0rc3_v1_2026-10-04.md).
+[Guide scientifique et API](https://github.com/KossiFO/helm-xai/blob/codex/publication/implementation_v2/README.md) ·
+[Installation et développement](https://github.com/KossiFO/helm-xai/blob/codex/publication/docs/DEVELOPPEMENT.md) ·
+[Note de version](https://github.com/KossiFO/helm-xai/blob/codex/publication/docs/RELEASE_0.2.0rc3_v1_2026-10-04.md).
 
 ## Portée
 
@@ -80,5 +80,5 @@ l’aveugle est un projet distinct ; l’hébergement du code sur GitHub ne cré
 un lien d’étude utilisable par les participants. Tests logiciels et recette ne
 constituent pas une validation humaine du framework.
 
-Le code HELM est distribué sous [licence MIT](LICENSE) ; voir [DROITS.md](DROITS.md).
-La publication PyPI est en préparation. Les fichiers GitHub sont directement installables.
+Le code HELM est distribué sous [licence MIT](https://github.com/KossiFO/helm-xai/blob/codex/publication/LICENSE) ; voir [DROITS.md](https://github.com/KossiFO/helm-xai/blob/codex/publication/DROITS.md).
+La candidate est disponible sur [PyPI](https://pypi.org/project/helm-xai/0.2.0rc3/) et dans les [releases GitHub](https://github.com/KossiFO/helm-xai/releases/tag/v0.2.0rc3).
