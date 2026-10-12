@@ -9,10 +9,10 @@ et GAM logistiques** avec un adaptateur fourni par HELM.
 
 ## Installation
 
-Python **3.10 à 3.12**. Pour installer la bibliothèque et son interface locale :
+Python **3.10 à 3.13**. Pour installer la bibliothèque et son interface locale :
 
 ```bash
-python -m pip install "helm-xai[ui]==0.2.0rc5"
+python -m pip install "helm-xai[ui]==0.2.0rc6"
 helm-ui
 ```
 
@@ -24,6 +24,8 @@ Le modèle de démonstration est entraîné sur **12 phrases synthétiques**. Il
 d’essayer le parcours, mais ne constitue pas un détecteur de toxicité validé.
 L’interface utilise les poids des modèles de texte déjà présents dans le cache
 local ; elle ne les télécharge pas.
+
+NumPy 1.x est utilisé sous Python 3.10–3.12 ; NumPy 2.x sous Python 3.13.
 
 ## Utilisation Python
 
@@ -73,7 +75,7 @@ Les modèles de régression, les objets XGBoost `Booster` bruts et les modèles
 Spark ML ne sont pas directement couverts par cet adaptateur.
 
 Les tests couvrent les probabilités, les classements, SHAP/LIME et les quatre
-profils. [Exemples et conditions précises](https://github.com/KossiFO/helm-xai/blob/codex/publication/docs/COMPATIBILITE_MODELES_v1_2026-10-05.md).
+profils. [Exemples et conditions précises](https://github.com/KossiFO/helm-xai/blob/codex/publication/docs/COMPATIBILITE_MODELES_v2_2026-10-12.md).
 
 ## Dépendances optionnelles
 
@@ -89,15 +91,19 @@ profils. [Exemples et conditions précises](https://github.com/KossiFO/helm-xai/
 | `dev` | Outils de test et de construction |
 
 Pour un modèle de texte et ces explicateurs :
-`python -m pip install "helm-xai[text,ig,anchors,notebook]==0.2.0rc5"`.
+`python -m pip install "helm-xai[text,ig,anchors,notebook]==0.2.0rc6"`.
 Les poids des modèles sont à obtenir séparément, selon leurs licences.
 
 ## Documentation et exemples
 
 - [API et fonctionnement](https://github.com/KossiFO/helm-xai/blob/codex/publication/implementation_v2/README.md)
 - [Exemple tabulaire synthétique](https://github.com/KossiFO/helm-xai/blob/codex/publication/examples/tabular_usage.py)
+- [Installation et recette Databricks (à valider sur votre Runtime)](https://github.com/KossiFO/helm-xai/blob/codex/publication/docs/Databricks_HELM_v2_2026-10-12.md)
 - [Développement et tests](https://github.com/KossiFO/helm-xai/blob/codex/publication/docs/DEVELOPPEMENT.md)
-- [Notes de version](https://github.com/KossiFO/helm-xai/blob/codex/publication/docs/RELEASE_0.2.0rc5_v1_2026-10-05.md)
+- [Notes de version](https://github.com/KossiFO/helm-xai/blob/codex/publication/docs/RELEASE_0.2.0rc6_v1_2026-10-12.md)
+
+Les documents versionnés du 14 septembre décrivent les anciennes versions alpha ;
+les instructions ci-dessus et la note rc6 s’appliquent à cette distribution.
 
 ## Périmètre et licence
 

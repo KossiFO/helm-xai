@@ -5,8 +5,8 @@ type: software
 authors:
   - family-names: Folly
     given-names: Kossi
-version: 0.2.0rc5
-date-released: 2026-10-04
+version: 0.2.0rc6
+date-released: 2026-10-12
 abstract: "Bibliothèque Python et démonstrateur local d’explicabilité adaptée au profil."
 repository-code: "https://github.com/KossiFO/helm-xai"
 license: MIT

@@ -8,6 +8,10 @@ permissions:
 jobs:
   package:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.12", "3.13"]
     env:
       USE_TF: "0"
       HF_HUB_OFFLINE: "1"
@@ -16,7 +20,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: ${{ matrix.python }}
           cache: pip
       - uses: actions/setup-node@v4
         with:
@@ -26,7 +30,10 @@ jobs:
       - name: Installer PyTorch CPU
         run: python -m pip install torch==2.7.1 --index-url https://download.pytorch.org/whl/cpu
       - name: Installer les outils et dépendances
-        run: python -m pip install -c requirements/constraints-py312.txt ".[text,ui,ig,anchors,notebook,dev]"
+        run: |
+          PY_VERSION="${{ matrix.python }}"
+          python -m pip install -c "requirements/constraints-py${PY_VERSION//./}.txt" ".[text,ui,ig,anchors,notebook,dev]"
+          python -m pip check
       - name: Vérifier Python
         run: |
           python -m ruff check implementation_v2/helm interface/tests tools
@@ -52,14 +59,14 @@ jobs:
           python -m build --wheel --outdir /tmp/helm-rebuilt /tmp/helm-source/*
       - uses: actions/upload-artifact@v4
         with:
-          name: helm-distributions
+          name: helm-distributions-${{ matrix.python }}
           path: dist/
 
   ui-compat:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python: ["3.10", "3.11", "3.12"]
+        python: ["3.10", "3.11", "3.12", "3.13"]
     env:
       USE_TF: "0"
       HF_HUB_OFFLINE: "1"
@@ -73,18 +80,22 @@ jobs:
 
   tabular-models:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.12", "3.13"]
     env:
       USE_TF: "0"
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: ${{ matrix.python }}
       - run: python -m pip install ".[boosting,statistics]" pytest
       - run: python -m pytest implementation_v2/tests/test_statistical_adapters.py
       - run: python examples/verify_classifiers.py --output /tmp/helm-models
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: tabular-compatibility-synthetic
+          name: tabular-compatibility-synthetic-${{ matrix.python }}
           path: /tmp/helm-models/

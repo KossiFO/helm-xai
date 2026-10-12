@@ -1,7 +1,7 @@
 [
   {
     "path": ".github/workflows/ci.yml",
-    "sha256": "5094c1c2e924a22034bb25fcd1c036b9f50d6498320a47314db6b12e5740d8ac"
+    "sha256": "ce704c71489503be5242882086fadf9a76451e10e373305a19faeca7dfe48d6d"
   },
   {
     "path": ".github/workflows/publish-pypi.yml",
@@ -9,7 +9,7 @@
   },
   {
     "path": "CITATION.cff",
-    "sha256": "6237f04662f0d8194665e3e3885f34d33dd8421b9c76be44d4f1f18917cd5875"
+    "sha256": "ad823424cc8ab9bf2d365a26f3c006b519ca7a98d4dae229ab1752fb0b9866de"
   },
   {
     "path": "DROITS.md",
@@ -25,7 +25,7 @@
   },
   {
     "path": "README.md",
-    "sha256": "ac5c9a3d46b0ab68dae2a94d53acce5aeaefa5ed467f948512e9572b24f6be9a"
+    "sha256": "54204266ac1ec57deab0a7eaad7ac0265e9e6243f0dd82047ea37a64825d3145"
   },
   {
     "path": "THIRD_PARTY_NOTICES.txt",
@@ -36,12 +36,20 @@
     "sha256": "a912ac9ed474ce28217f2d944736bb01767f8613e07bec67f23a52da0463a26a"
   },
   {
+    "path": "docs/COMPATIBILITE_MODELES_v2_2026-10-12.md",
+    "sha256": "b9ef9832b5e5f359c8e81f9fbe333e32bb55d4891e63f89d488ca5e3fb93984d"
+  },
+  {
     "path": "docs/DEVELOPPEMENT.md",
-    "sha256": "aedccef8304854f7bea6eae8267399e445a1425a05378c2e116934552aee8315"
+    "sha256": "c8a3a016c7bb5ed46fe519c046c5c228ad64ae4ef2d06d4be01c40faf64168aa"
   },
   {
     "path": "docs/Databricks_HELM_v1_2026-09-14.md",
     "sha256": "cb6d10508bc8c4ea134be7227b24203581bc55a4e972eaedf84383434c7c202c"
+  },
+  {
+    "path": "docs/Databricks_HELM_v2_2026-10-12.md",
+    "sha256": "225cba0768957a522d9326a2fd36a1c444b9d9b3966c1650ac480d9017838572"
   },
   {
     "path": "docs/Distribution_Python_v1_2026-09-14.md",
@@ -82,6 +90,10 @@
   {
     "path": "docs/RELEASE_0.2.0rc5_v1_2026-10-05.md",
     "sha256": "058c4652c58478d3b295710884dc751f53bd0d65724553b83ae530270c4b1365"
+  },
+  {
+    "path": "docs/RELEASE_0.2.0rc6_v1_2026-10-12.md",
+    "sha256": "0d63721ee5325acd6fe26bc1e01e6cfd725689350d4941ef32d6357d436b1adb"
   },
   {
     "path": "docs/VALIDATION_0.1.0a5_v1_2026-09-10.md",
@@ -140,6 +152,10 @@
     "sha256": "986b529f40df12d7a7c6cea61c3a47f5c8c5a22ef6f560451c39a13d1b4935cf"
   },
   {
+    "path": "examples/databricks/HELM_Databricks_v2_2026-10-12.py",
+    "sha256": "5f81adbf1f9454473f7a3f975da82ec0d043f6b0c4ad744810ed8375d4e4372c"
+  },
+  {
     "path": "examples/study_fixed_stimuli.py",
     "sha256": "8d6ec7dfac0b9da92a0ddbf6e42ac15bab309144f7c8b50e2e1fc0bba6c6c848"
   },
@@ -157,7 +173,7 @@
   },
   {
     "path": "implementation_v2/README.md",
-    "sha256": "7593a4941ca30f169c086bce8a8b2a8ba4b97165377dfe9911c66d42db2356ba"
+    "sha256": "040cc65b1bbba222ecc73d9d9f57ea3ff131be0a074ead5f83dc4d482c0eae41"
   },
   {
     "path": "implementation_v2/RELEASE_0.1.0a4_v1_2026-09-10.md",
@@ -177,7 +193,7 @@
   },
   {
     "path": "implementation_v2/helm/__init__.py",
-    "sha256": "5527d032e182ae89a0db88912791b6a45c1dfc050e9cfb08697182fda8bc85a8"
+    "sha256": "38e0cab8c2cdb7b336af832d8087bd559c44fc4adb4776f4ad24194845e4615f"
   },
   {
     "path": "implementation_v2/helm/config.py",
@@ -585,11 +601,15 @@
   },
   {
     "path": "pyproject.toml",
-    "sha256": "80bf4583841b088ecda0aefa2eac4d40c68a7622b44ad1eca759bd5dfb48f8b0"
+    "sha256": "fce07e943e0b05f9ff35fc3ca9d75163add4ec4bc79f94e95d12ec5b478676ff"
   },
   {
     "path": "requirements/constraints-py312.txt",
     "sha256": "22ea52f412823c9cf647acb3ea07152cd587122dbbcda07367a3f1769e2c4038"
+  },
+  {
+    "path": "requirements/constraints-py313.txt",
+    "sha256": "f6065657d441578d6ffbd09e4ef1be2fd420bf43e20cb76e15acc011fb5b3a7e"
   },
   {
     "path": "setup.py",

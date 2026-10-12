@@ -9,7 +9,7 @@ présentation), backends XAI identifiés, sélection par profil et UCB1 ; LinUCB
 > Adaptive Post-Hoc Explanation Selection in Textual Toxicity Classification*,
 > workshop XKDD, ECML-PKDD 2026.
 
-## Livraison installable 0.2.0rc4
+## Livraison installable 0.2.0rc6
 
 La wheel embarque maintenant l’interface épurée. Installer la wheel avec l’extra
 `[ui]`, puis lancer `helm-ui` ; voir le [guide de livraison](../README.md).
@@ -25,8 +25,9 @@ pip install -e ".[text]"      # modèles de texte : Torch et Transformers
 pip install -e ".[all,dev]"   # + captum, anchors officiel, matplotlib, tests
 ```
 
-Contraintes d'environnement : Python ≥ 3.10 et < 3.13 (recette : 3.12), `USE_TF=0` dans l'environnement
+Contraintes d'environnement : Python ≥ 3.10 et < 3.14 (recettes : 3.12 et 3.13), `USE_TF=0` dans l'environnement
 avant tout import (sinon transformers tente de charger TensorFlow), `protobuf < 5`.
+NumPy 1.x est utilisé sous Python 3.10–3.12, NumPy 2.x sous Python 3.13.
 Les modèles HuggingFace se téléchargent au premier chargement.
 
 ## Utilisation
