@@ -14,6 +14,7 @@ from fastapi.staticfiles import StaticFiles
 from .models import create_model, model_options
 from .schemas import ExplainRequest, FeedbackRequest
 from .service import ExplanationService, PROFILES
+from .diagnostics import diagnostics
 
 BASE = Path(__file__).resolve().parent
 
@@ -25,7 +26,7 @@ def default_data_path():
 
 
 def create_app(data_path=None, model_factory=create_model, *, assets_path=None, source_label=None):
-    app = FastAPI(title="HELM · Interface Codex", version=__version__, docs_url="/api/docs")
+    app = FastAPI(title="HELM · Interface locale", version=__version__, docs_url="/api/docs")
     service = ExplanationService(data_path if data_path is not None else default_data_path(), model_factory)
     app.state.service = service
 
@@ -38,7 +39,8 @@ def create_app(data_path=None, model_factory=create_model, *, assets_path=None, 
 
     @app.get("/api/config")
     def config():
-        return {"profiles": PROFILES, "models": model_options(), "edition": "Codex"}
+        return {"profiles": PROFILES, "models": model_options(), "edition": "Recherche",
+                "environment": diagnostics()}
 
     @app.post("/api/explanations")
     def explain(request: ExplainRequest):

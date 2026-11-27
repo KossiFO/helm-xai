@@ -4,7 +4,7 @@ import { api } from "../src/api.js";
 
 test("Une connexion refusée donne un message de relance compréhensible", async (t) => {
   t.mock.method(globalThis, "fetch", async () => { throw new TypeError("Failed to fetch"); });
-  await assert.rejects(api("/config"), /service local.*Relancez HELM Codex/);
+  await assert.rejects(api("/config"), /service local.*Relancez HELM/);
 });
 
 test("Une requête annulée reste une annulation sans message de panne", async (t) => {

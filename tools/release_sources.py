@@ -10,6 +10,7 @@ TREES = {
     'interface/frontend': {'.json', '.js', '.jsx', '.mjs', '.css', '.html'},
     'interface/tests': {'.py'}, 'docs': {'.md'}, 'requirements': {'.txt'},
     'tools': {'.py'}, 'examples': {'.py', '.ipynb', '.md'}, '.github/workflows': {'.yml', '.yaml'},
+    '.github/ISSUE_TEMPLATE': {'.yml', '.yaml'},
 }
 EXCLUDED = {'node_modules', 'dist', '__pycache__', '.venv', '.runtime'}
 

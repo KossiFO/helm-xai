@@ -57,7 +57,7 @@ export default function ResultView({ result, loading, onFeedback }) {
       <FeedbackPanel key={`${result.id}:${selected}`} result={result} selected={selected} onFeedback={onFeedback} />
       <ResultDetails result={result} selected={selected} onSelect={setMethod} />
       <div className="result-footer"><span>{result.duration.toFixed(2)} s · {Object.keys(result.attributions).length} explications</span>
-        <a href={`/api/explanations/${result.id}/export`} download>Exporter l’analyse</a>
+        <a href={`/api/explanations/${result.id}/export`} download>Exporter l’analyse (avec le texte saisi)</a>
       </div>
     </section>
   );

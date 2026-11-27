@@ -1,12 +1,12 @@
 cff-version: 1.2.0
 message: "Pour citer cette version logicielle, utiliser les informations ci-dessous."
-title: "HELM — explications adaptées au profil (édition Codex)"
+title: "HELM — explications adaptées au profil"
 type: software
 authors:
   - family-names: Folly
     given-names: Kossi
-version: 0.2.0rc6
-date-released: 2026-10-12
+version: 0.2.0rc7
+date-released: 2026-11-27
 abstract: "Bibliothèque Python et démonstrateur local d’explicabilité adaptée au profil."
 repository-code: "https://github.com/KossiFO/helm-xai"
 license: MIT

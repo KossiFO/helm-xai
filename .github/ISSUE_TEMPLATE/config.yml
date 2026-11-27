@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Envoyer un retour privé par courriel
+    url: mailto:follyametepkossi@gmail.com
+    about: Sans compte GitHub. Indiquez votre version de HELM et les étapes suivies.

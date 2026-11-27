@@ -4,11 +4,13 @@ import ProfileSelect from "./components/ProfileSelect.jsx";
 import Controls from "./components/Controls.jsx";
 import ResultView from "./components/ResultView.jsx";
 import History from "./components/History.jsx";
+import TesterSupport from "./components/TesterSupport.jsx";
 
 export default function App() {
   const [config, setConfig] = useState(null),
     [profile, setProfile] = useState("utilisateur_final");
   const [text, setText] = useState("");
+  const [testerDetails, setTesterDetails] = useState("");
   const [model, setModel] = useState("demo"),
     [result, setResult] = useState(null);
   const [loading, setLoading] = useState(false),
@@ -100,11 +102,16 @@ export default function App() {
             className={page === "explore" ? "active" : ""} onClick={() => setPage("explore")}>Expliquer un message</button>
           <button aria-current={page === "history" ? "page" : undefined}
             className={page === "history" ? "active" : ""} onClick={() => setPage("history")}>Historique</button>
+          <button aria-current={page === "support" ? "page" : undefined}
+            className={page === "support" ? "active" : ""} onClick={() => setPage("support")}>Tester et faire un retour</button>
         </nav>
       </header>
       <main id="main">
         {error && <p className="error-banner" role="alert">{error}</p>}
-        {!config ? (
+        {page === "support" ? (
+          <TesterSupport environment={config?.environment} result={result}
+            details={testerDetails} setDetails={setTesterDetails} />
+        ) : !config ? (
           <p className="card">{error ? "Le service local doit être démarré." : "Connexion à HELM…"}</p>
         ) : page === "history" ? (
           <History profiles={config.profiles} onOpen={openHistory} />
@@ -122,7 +129,7 @@ export default function App() {
           </>
         )}
       </main>
-      <footer className="page-footer">HELM · Édition Codex · Analyses conservées sur ce poste</footer>
+      <footer className="page-footer">HELM · Version de recherche · Analyses et notes conservées sur ce poste</footer>
     </div>
   );
 }

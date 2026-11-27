@@ -7,25 +7,43 @@ Une extension expérimentale explique les prédictions de modèles entraînés s
 des tableaux de variables numériques et catégorielles, notamment **Random Forest, XGBoost et LightGBM**, ainsi que les **GLM binomiaux
 et GAM logistiques** avec un adaptateur fourni par HELM.
 
-## Installation
+## Premier essai et retour utilisateur
 
-Python **3.10 à 3.13**. Pour installer la bibliothèque et son interface locale :
+**Commencez par le [guide testeur](https://github.com/KossiFO/helm-xai/blob/codex/publication/docs/TESTER_HELM.md)** : installation isolée sous Windows/macOS/Linux,
+exemples à essayer, résultats attendus et procédure pour transmettre un retour.
+Cet essai s’adresse aux personnes qui utilisent Python. Il ne constitue pas une étude scientifique.
+
+Python **3.10 à 3.13** (pas 3.14). Dans un environnement virtuel :
 
 ```bash
-python -m pip install "helm-xai[ui]==0.2.0rc6"
-helm-ui
+python -m pip install "helm-xai[ui]==0.2.0rc7"
+python -m helm.ui
 ```
 
-Le navigateur ouvre `http://127.0.0.1:8767/`. Choisir un profil, saisir un commentaire
-et cliquer sur **Expliquer**. La wheel inclut l’interface ; Node.js n’est pas requis.
-Pour un autre port : `helm-ui --port 8771`. Arrêter le serveur avec Ctrl+C.
+Le navigateur ouvre `http://127.0.0.1:8767/`. Garder **Démonstration locale**, choisir
+**Remerciement**, puis cliquer sur **Expliquer**. Passer ensuite au profil **Expert technique**
+pour explorer une autre présentation. Ni GPU, ni compte, ni clé d’API, ni Node.js ne sont nécessaires.
+Laisser le terminal ouvert ; arrêter avec Ctrl+C. Pour un autre port : `python -m helm.ui --port 8771`.
 
 Le modèle de démonstration est entraîné sur **12 phrases synthétiques**. Il permet
 d’essayer le parcours, mais ne constitue pas un détecteur de toxicité validé.
-L’interface utilise les poids des modèles de texte déjà présents dans le cache
-local ; elle ne les télécharge pas.
+Les autres modèles utilisent des poids déjà présents dans le cache local ;
+la démonstration n’a pas besoin de les télécharger.
 
-NumPy 1.x est utilisé sous Python 3.10–3.12 ; NumPy 2.x sous Python 3.13.
+### Transmettre un retour
+
+L’onglet **Tester et faire un retour** permet de rédiger et télécharger un rapport
+avec les versions utiles et les notes de la dernière analyse affichée, sans ajouter
+le texte analysé. Relisez-le, puis partagez-le :
+
+- [GitHub Issues](https://github.com/KossiFO/helm-xai/issues/new/choose) : problème ou retour d’essai (public, compte GitHub requis).
+- Courriel à **follyametepkossi@gmail.com**, objet « Retour de test HELM » (aucun compte GitHub nécessaire).
+
+**Les notes saisies dans l’interface restent locales et ne nous sont pas envoyées.**
+Elles peuvent influencer les sélections suivantes sur votre poste. Les retours
+sur le logiciel ne démontrent pas l’efficacité de l’adaptation aux utilisateurs.
+L’export complet d’une analyse contient le texte saisi : ne publiez pas de données confidentielles.
+Pour un diagnostic de versions : `python -m helm.ui --diagnostic`.
 
 ## Utilisation Python
 
@@ -91,7 +109,7 @@ profils. [Exemples et conditions précises](https://github.com/KossiFO/helm-xai/
 | `dev` | Outils de test et de construction |
 
 Pour un modèle de texte et ces explicateurs :
-`python -m pip install "helm-xai[text,ig,anchors,notebook]==0.2.0rc6"`.
+`python -m pip install "helm-xai[text,ig,anchors,notebook]==0.2.0rc7"`.
 Les poids des modèles sont à obtenir séparément, selon leurs licences.
 
 ## Documentation et exemples
@@ -100,10 +118,10 @@ Les poids des modèles sont à obtenir séparément, selon leurs licences.
 - [Exemple tabulaire synthétique](https://github.com/KossiFO/helm-xai/blob/codex/publication/examples/tabular_usage.py)
 - [Installation et recette Databricks (à valider sur votre Runtime)](https://github.com/KossiFO/helm-xai/blob/codex/publication/docs/Databricks_HELM_v2_2026-10-12.md)
 - [Développement et tests](https://github.com/KossiFO/helm-xai/blob/codex/publication/docs/DEVELOPPEMENT.md)
-- [Notes de version](https://github.com/KossiFO/helm-xai/blob/codex/publication/docs/RELEASE_0.2.0rc6_v1_2026-10-12.md)
+- [Notes de version](https://github.com/KossiFO/helm-xai/blob/codex/publication/docs/RELEASE_0.2.0rc7_v1_2026-11-27.md)
 
 Les documents versionnés du 14 septembre décrivent les anciennes versions alpha ;
-les instructions ci-dessus et la note rc6 s’appliquent à cette distribution.
+les instructions ci-dessus et la note rc7 s’appliquent à cette distribution.
 
 ## Périmètre et licence
 

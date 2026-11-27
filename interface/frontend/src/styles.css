@@ -111,6 +111,10 @@ pre { background: #f4f6f7; border-radius: 5px; padding: 10px; font-size: 12px; w
 .loading-state p { color: var(--muted); }
 .error-banner { padding: 12px; border: 1px solid #daada4; background: #fff4ef; color: #9a382d; border-radius: 6px; margin-bottom: 16px; }
 .page-footer { color: var(--muted); font-size: 12px; margin-top: 20px; }
+.tester-support p, .tester-support ol { margin: 12px 0; line-height: 1.6; }
+.tester-support label { display: block; margin: 16px 0 6px; font-weight: 600; }
+.support-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 16px; margin: 16px 0; }
+.app-header nav { flex-wrap: wrap; }
 .card-heading { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
 .card-heading h2 { margin: 0; }
 .history-list { display: grid; gap: 8px; margin-top: 16px; }

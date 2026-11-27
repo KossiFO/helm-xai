@@ -14,7 +14,7 @@ export async function api(path, body, signal) {
   } catch (error) {
     if (error.name === "AbortError") throw error;
     throw new Error(
-      "Le service local est arrêté ou inaccessible. Relancez HELM Codex, puis réessayez.",
+      "Le service local est arrêté ou inaccessible. Relancez HELM, puis réessayez.",
     );
   }
   let data;

@@ -1,5 +1,6 @@
 """Lancement local de l’interface distribuée dans la wheel."""
 import argparse
+import json
 from pathlib import Path
 import threading
 import webbrowser
@@ -20,7 +21,12 @@ def main(argv=None):
     parser.add_argument("--port", type=port_number, default=8767)
     parser.add_argument("--data-dir", type=Path, help="Dossier local pour l’historique et les notes")
     parser.add_argument("--no-browser", action="store_true", help="Ne pas ouvrir le navigateur automatiquement")
+    parser.add_argument("--diagnostic", action="store_true", help="Afficher les versions utiles pour un retour, puis quitter")
     args = parser.parse_args(argv)
+    if args.diagnostic:
+        from .diagnostics import diagnostics
+        print(json.dumps(diagnostics(), ensure_ascii=False, indent=2))
+        return 0
     try:
         import uvicorn
         from .app import create_app

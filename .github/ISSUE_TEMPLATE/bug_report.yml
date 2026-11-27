@@ -1,0 +1,39 @@
+name: Problème d’installation ou de fonctionnement
+description: Signaler un problème reproductible rencontré pendant un essai de HELM.
+title: "[Test HELM] "
+body:
+  - type: markdown
+    attributes:
+      value: "Merci ! Cette issue sera publique. Utilisez un exemple inventé ; ne joignez ni données personnelles, ni texte confidentiel, ni export complet d’analyse."
+  - type: input
+    id: environment
+    attributes:
+      label: Version HELM, Python et système
+      description: "Exemple : HELM 0.2.0rc7, Python 3.13, macOS. Si l’installation échoue, précisez simplement les versions connues."
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Étapes pour reproduire
+      description: Commande d’installation ou exemple synthétique, profil et méthode utilisés.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Résultat attendu
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Résultat observé
+      description: Message d’erreur utile, sans identifiant, secret ou chemin personnel.
+    validations:
+      required: true
+  - type: textarea
+    id: report
+    attributes:
+      label: Rapport de test facultatif
+      description: Copiez ici le rapport relu depuis « Tester et faire un retour », ou le diagnostic de version.

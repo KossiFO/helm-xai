@@ -26,8 +26,10 @@ export default function FeedbackPanel({ result, selected, onFeedback }) {
           className={ratings[selected] === n ? "rated" : ""}>{n}</button>)}
       </div>
       <p className="feedback-message" aria-live="polite">{error ? <span role="alert">{error}</span>
-        : saving ? "Enregistrement…" : ratings[selected] ? "Note enregistrée pour cette explication et ce profil."
+        : saving ? "Enregistrement…" : ratings[selected] ? "Note enregistrée sur cet ordinateur, non envoyée à l’auteur."
         : "1 · Peu utile — 5 · Très utile"}</p>
+      <p>Ces notes peuvent influencer les prochaines sélections sur ce poste.
+        Pour les partager, utilisez « Tester et faire un retour ».</p>
     </div>
   );
 }

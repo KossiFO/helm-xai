@@ -1,0 +1,21 @@
+name: Retour sur un essai
+description: Dire ce qui fonctionne, ce qui manque ou ce qui reste difficile à comprendre.
+title: "[Retour HELM] "
+body:
+  - type: markdown
+    attributes:
+      value: "Retour sur le logiciel, hors étude scientifique. Cette issue est publique. N’incluez pas de données personnelles ou confidentielles."
+  - type: textarea
+    id: context
+    attributes:
+      label: Ce que vous avez essayé
+      description: Version, profil, modèle et tâche ; exemple inventé uniquement.
+    validations:
+      required: true
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Ce qui fonctionne et ce qui pourrait être amélioré
+      description: Précisez les mots, informations ou étapes qui vous ont aidé ou manqué.
+    validations:
+      required: true

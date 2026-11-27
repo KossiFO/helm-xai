@@ -1,5 +1,17 @@
 [
   {
+    "path": ".github/ISSUE_TEMPLATE/bug_report.yml",
+    "sha256": "860aa739e41fe5112a901c064438194d81a3410d720655c76fab5a2286c4cdeb"
+  },
+  {
+    "path": ".github/ISSUE_TEMPLATE/config.yml",
+    "sha256": "96bd5db4780858b5fec2bddb4a48c73e9cb15e1df09513547d0cd9d9ffbfc9eb"
+  },
+  {
+    "path": ".github/ISSUE_TEMPLATE/test_feedback.yml",
+    "sha256": "23a305d49bcfe58aaa58eea4dc69511019d4351db969aa3237b28f10117cbf28"
+  },
+  {
     "path": ".github/workflows/ci.yml",
     "sha256": "ce704c71489503be5242882086fadf9a76451e10e373305a19faeca7dfe48d6d"
   },
@@ -9,7 +21,7 @@
   },
   {
     "path": "CITATION.cff",
-    "sha256": "ad823424cc8ab9bf2d365a26f3c006b519ca7a98d4dae229ab1752fb0b9866de"
+    "sha256": "fd44efe8149d1064ff9c2db0589d79257ecf3cc49e11e3164cb3ca283d0665ff"
   },
   {
     "path": "DROITS.md",
@@ -21,11 +33,11 @@
   },
   {
     "path": "MANIFEST.in",
-    "sha256": "125302d218a161a335b4c33a09038ca0373683599e4836b975ab02923b7dc65c"
+    "sha256": "fef68bcd8f0aa131e271f2481b57daa9899b919cfe77249429e4aafed32e7718"
   },
   {
     "path": "README.md",
-    "sha256": "54204266ac1ec57deab0a7eaad7ac0265e9e6243f0dd82047ea37a64825d3145"
+    "sha256": "d315d191eeb2f30c9830945497d1821accfaf616e14a392ef81acb3e7288f887"
   },
   {
     "path": "THIRD_PARTY_NOTICES.txt",
@@ -94,6 +106,14 @@
   {
     "path": "docs/RELEASE_0.2.0rc6_v1_2026-10-12.md",
     "sha256": "0d63721ee5325acd6fe26bc1e01e6cfd725689350d4941ef32d6357d436b1adb"
+  },
+  {
+    "path": "docs/RELEASE_0.2.0rc7_v1_2026-11-27.md",
+    "sha256": "c0eec06dc4cd3149010b7a426eb2bf5de909368615446d47a76cd98a7eaa4dc2"
+  },
+  {
+    "path": "docs/TESTER_HELM.md",
+    "sha256": "57056af126c4fb224c35f04c4ea903caf4455d0dceae097c14462ea23a5dc139"
   },
   {
     "path": "docs/VALIDATION_0.1.0a5_v1_2026-09-10.md",
@@ -193,7 +213,7 @@
   },
   {
     "path": "implementation_v2/helm/__init__.py",
-    "sha256": "38e0cab8c2cdb7b336af832d8087bd559c44fc4adb4776f4ad24194845e4615f"
+    "sha256": "af75edda0d9b89585939a64acb6e18321f36048b6bbef4759da6d1e897115f77"
   },
   {
     "path": "implementation_v2/helm/config.py",
@@ -377,11 +397,15 @@
   },
   {
     "path": "implementation_v2/helm/ui/app.py",
-    "sha256": "e13ae1a5481e1bf0a96b157dce624c497d045352684140e9d1b058d73ba377c0"
+    "sha256": "360cbe6caf9d002524f380a8d5ec4567488bffbdcb7dcb8170c55c8f1c7937dd"
   },
   {
     "path": "implementation_v2/helm/ui/cli.py",
-    "sha256": "ad5317380c3e55caecc99ab72e9b43fa1481a337c619387329f02eb8e9e2f9d3"
+    "sha256": "de58bb333876a262e15402c6fb4176c99ed5ea048aa887f8f8484f8d93aa1947"
+  },
+  {
+    "path": "implementation_v2/helm/ui/diagnostics.py",
+    "sha256": "869bd1cded957b3e6cc1c3f87aa894a4c5c1333fa4bf35efad77aced50d22c5e"
   },
   {
     "path": "implementation_v2/helm/ui/models.py",
@@ -400,16 +424,16 @@
     "sha256": "8939eb84c7b6b077951c793a4aef4181c1557f07b2ed04491e6cd5f7ef3412fb"
   },
   {
-    "path": "implementation_v2/helm/ui/static/assets/index-fpiPKAhX.js",
-    "sha256": "16c2fba1d06ee499f4044107cce3fd344e3c83a18170e8bc2a35bb4a24564ffd"
+    "path": "implementation_v2/helm/ui/static/assets/index-DbTOCejt.css",
+    "sha256": "aba3b619bdbd33a8c65cba5ab5cf5fcc1ddaa6482b87b5eaff1682a28ca20ccb"
   },
   {
-    "path": "implementation_v2/helm/ui/static/assets/index-vOV6z_2R.css",
-    "sha256": "58cf6fb01bd681785738719e65b1c57ddd7d157a3f8a91bf0ac34712f5747926"
+    "path": "implementation_v2/helm/ui/static/assets/index-thCZ6ZXm.js",
+    "sha256": "ac39ae54da422e1a2cfd9b72c3a9bf50a4bc48812ca26567e6256396e8643713"
   },
   {
     "path": "implementation_v2/helm/ui/static/index.html",
-    "sha256": "37d60e68b603ced9270067ea82e1fdf20dcc591be6d1fb3d40c87978072de126"
+    "sha256": "0f7027f37546718c020054757124c16edc500c5658ea5f28a9eaab44e461d73a"
   },
   {
     "path": "implementation_v2/helm/ui/store.py",
@@ -521,7 +545,7 @@
   },
   {
     "path": "interface/frontend/index.html",
-    "sha256": "492244810a307ea7ea7ca8ffc892cc94d298aa11072cb647018ef4eaaedd513a"
+    "sha256": "960e96a320fa792a6ded2f0f2f6281b97768520382393e084116c35acaa3ccda"
   },
   {
     "path": "interface/frontend/package-lock.json",
@@ -533,11 +557,11 @@
   },
   {
     "path": "interface/frontend/src/App.jsx",
-    "sha256": "e98dccb2ca156e98edae636544b4e068c75f3e50628d9e8c010a6678654880d9"
+    "sha256": "c7240543473f8653c2d91653ee63212ba0bac10372e5bb24313e37d6f200de18"
   },
   {
     "path": "interface/frontend/src/api.js",
-    "sha256": "a8960fb79dea48a1262c6e8fb76420a6bb56b9ea2b88f130d925ed5293f031c1"
+    "sha256": "a990a788efbc388fe94c813684bd055b7a5c8bf6654b3dc0246f6471a5494f50"
   },
   {
     "path": "interface/frontend/src/components/Attributions.jsx",
@@ -549,7 +573,7 @@
   },
   {
     "path": "interface/frontend/src/components/FeedbackPanel.jsx",
-    "sha256": "31d20c738370809d528e0568bd4997994677ec0a072b300de61b3023ccb6208b"
+    "sha256": "30f0bd23fe6ca988c66a05c7dc585cc7e26b79652ae55673c0f255f0af421837"
   },
   {
     "path": "interface/frontend/src/components/History.jsx",
@@ -565,7 +589,11 @@
   },
   {
     "path": "interface/frontend/src/components/ResultView.jsx",
-    "sha256": "cc0e818f1501571a6dbc1acc6d3d664643577f5895c7fb5373667825c8214016"
+    "sha256": "216a895d4855184e70e985ca1bb50e8383abbc697474bcdc94c2e65da8268b55"
+  },
+  {
+    "path": "interface/frontend/src/components/TesterSupport.jsx",
+    "sha256": "fd278da5c80b1d8ce9c8d24c7a52983bd3e27789d2dce25d3478a528031da7a6"
   },
   {
     "path": "interface/frontend/src/lib.mjs",
@@ -577,15 +605,23 @@
   },
   {
     "path": "interface/frontend/src/styles.css",
-    "sha256": "91a25e1bb282a3b3d5099629e9ca3c3967b2059869b825ba3ea6730d67bcb1b3"
+    "sha256": "28d801f00b6015e19cf1fc4e2c57acb74bec5ef9ce8848fa48f842d593d42716"
+  },
+  {
+    "path": "interface/frontend/src/testReport.mjs",
+    "sha256": "d137e51e20d2eaa95a39d2270b5016330ff3d308a843e3e95e11563868ea48a1"
   },
   {
     "path": "interface/frontend/tests/api.test.mjs",
-    "sha256": "afe22f642ff6b12006eab33f1d9a2c9c32dea6eb6136529b53ead45970764775"
+    "sha256": "481a509875485d6bf41c955a01e47e26e201ae994be351e95d5b4b1b950cb62d"
   },
   {
     "path": "interface/frontend/tests/lib.test.mjs",
     "sha256": "4cc86e54ee4c15a0a077e84e4f3940a03792402d1e060c1fa94a6881fd6c47d9"
+  },
+  {
+    "path": "interface/frontend/tests/testReport.test.mjs",
+    "sha256": "1e42772d65784a984a48196f84d77abd5578875e8f18f61df992394b58885947"
   },
   {
     "path": "interface/frontend/vite.config.js",
@@ -596,12 +632,16 @@
     "sha256": "99e3ca863dbeb6eb11ac3ac8892a4debcb0b5ecf6e2a64bc10c84b53c5bc590f"
   },
   {
+    "path": "interface/tests/test_diagnostics.py",
+    "sha256": "fcb9bc154b8041f12a00c0efab162ef4d437448e251ffe4d78f496530be5dc42"
+  },
+  {
     "path": "interface/tests/test_packaged_ui.py",
     "sha256": "0233e9cc6b47d80f13b0a6ada0ce2fe105999db6b81e58a87bf751b368826aac"
   },
   {
     "path": "pyproject.toml",
-    "sha256": "fce07e943e0b05f9ff35fc3ca9d75163add4ec4bc79f94e95d12ec5b478676ff"
+    "sha256": "051e6059db935180c371f1cb7ce96fdb40c7c2a5c4bd72c81250a9667e9d2063"
   },
   {
     "path": "requirements/constraints-py312.txt",
@@ -625,7 +665,7 @@
   },
   {
     "path": "tools/release_sources.py",
-    "sha256": "fb785b696539c7c107d2386556a0eac93a54e9af19333acb196fa75dba60b7b0"
+    "sha256": "a9621ed74daf4ad4faa2c670fe84a54065c293923a50cd0e786759f6b579c6eb"
   },
   {
     "path": "tools/smoke_installed.py",
